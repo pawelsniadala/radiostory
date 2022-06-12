@@ -40,4 +40,61 @@
             }
         }
     }
+
+    &.cast {
+        display: inline-block !important;
+        background-color: #ffffff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        border: none;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        // border-radius: 8px;
+        border-radius: 0;
+
+        .card-img-top {
+            // border-top-left-radius: calc(8px - 1px);
+            // border-top-right-radius: calc(8px - 1px);
+            border-radius: 0;
+            user-select: none;
+        }
+
+        .card-body {
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+
+            // .card-realization {
+            //     color: #70757a;
+            // }
+
+            .card-text {
+                font-weight: 300;
+                font-size: .95rem;
+                line-height: 1.43;
+                letter-spacing: 0.01071em;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        // .card-footer {
+        //     font-size: .875em;
+        //     background-color: transparent;
+        //     border-top: 1px solid rgba(0, 0, 0, .1);
+        // }
+
+        @media (hover: hover) {
+            &:hover {
+                // transform: scale(1.04);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transition: .5s ease;
+                cursor: pointer;
+                z-index: 2;
+            }
+        }
+    }
 }

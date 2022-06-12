@@ -1,10 +1,19 @@
-.page-header {
-    .header {
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
+.header {
+    &.page {
+        .text {
+            text-transform: uppercase;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+            margin: 0;
+        }
     }
 
-    // .divider {
-    //     opacity: .15;
-    // }
+    &.section {
+        .text {
+            text-transform: uppercase;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+            margin: 0;
+        }
+    }
 }
