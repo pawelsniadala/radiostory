@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-// import { photo } from "../data/photo";
-import PageHeader from "../components/PageHeader";
-
+import { cast } from "../data/cast";
+import HeaderPage from "../components/HeaderPage";
+import CardCast from "../components/CardCast";
 
 const CastView = () => {
     useEffect(() => {
@@ -10,8 +10,24 @@ const CastView = () => {
 
     return (
         <div className="cast-view">
-            <div className="view-wrapper container">
-                <PageHeader header="Obsada" />
+            <div className="view-wrapper">
+                <div className="view-header">
+                    <HeaderPage header="Obsada" />
+                </div>
+                <div className="view-body container">
+                    <div className="card-wrapper cast">
+                        {cast.length ? cast.map(item => (
+                            <CardCast
+                                key={item.id}
+                                cardTitle={item.name}
+                                cardDescription={item.role}
+                                cardImg={item.img}
+                            />
+                        )) : (
+                            <div />
+                        )}
+                    </div>
+                </div>
             </div>
         </div>
     );

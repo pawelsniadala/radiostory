@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { photo } from "../data/photo";
-import PageHeader from "../components/PageHeader";
+import HeaderPage from "../components/HeaderPage";
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoFilmPartial from "./partials/photo/PhotoFilmPartial";
 import PhotoPlanPartial from "./partials/photo/PhotoPlanPartial";
@@ -60,7 +60,7 @@ const PhotoView = () => {
     return (
         <div className="photo-view">
             <div className="view-wrapper container">
-                <PageHeader header={photo.title} />
+                <HeaderPage header={photo.title} />
                 <div className="navpils">
                     <ul className="nav nav-pills photo">
                         <li className="nav-item">

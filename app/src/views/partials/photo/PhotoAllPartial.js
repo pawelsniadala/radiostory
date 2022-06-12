@@ -1,6 +1,6 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { photo } from "../../../data/photo";
-import Card from "../../../components/Card";
+import CardPhoto from "../../../components/CardPhoto";
 
 const PhotoAllPartial = () => {
     const all = [
@@ -33,7 +33,7 @@ const PhotoAllPartial = () => {
                                     title={item.title}
                                 >
                                     {({ ref, open }) => (
-                                        <Card
+                                        <CardPhoto
                                             cardTitle={item.title}
                                             cardPhotoSrc={item.thumbnail.src}
                                             layoutRef={ref}
