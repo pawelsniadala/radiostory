@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import PosterSection from "../sections/PosterSections";
 import CastSection from "../sections/CastSection";
+import CreatorSection from "../sections/CreatorSection";
+import PhotoSection from "../sections/PhotoSection";
 // import IntroductionSection from "../sections/IntroductionSection";
 // import PreludeSection from "../sections/PreludeSection";
 // import VideoSection from "../sections/VideoSection";
@@ -22,6 +24,8 @@ const HomeView = () => {
         <div className="home-view">
             <PosterSection />
             <CastSection />
+            <CreatorSection />
+            <PhotoSection />
         </div>
     );
 };

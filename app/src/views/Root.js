@@ -34,7 +34,7 @@ import PhotoPlanPartial from "./partials/photo/PhotoPlanPartial"
 // import PhotoDronePartial from "./partials/photo/PhotoDronePartial";
 // import BackstageVideoPartial from "./partials/backstage/BackstageVideoPartial";
 // import BackstagePhotoPartial from "./partials/backstage/BackstagePhotoPartial";
-// import ScrollArrow from "../components/ScrollArrow";
+import ScrollArrow from "../components/ScrollArrow";
 // import Modal from "../components/Modal";
 // import Toast from "../components/Toast";
 
@@ -81,8 +81,8 @@ const Root = () => (
             </main>
             {/* <Modal />
             <Toast />
-            <FooterSection />
-            <ScrollArrow /> */}
+            <FooterSection /> */}
+            <ScrollArrow />
         </Router>
     </MainTemplate>
 );
