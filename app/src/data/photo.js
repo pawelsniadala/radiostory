@@ -66,7 +66,7 @@ export const photo = {
             original: {
                 src: photoFilmOriginal3,
                 width: "1346",
-                height: "926"
+                height: "920"
             }
         },
         {
