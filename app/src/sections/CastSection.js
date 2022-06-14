@@ -1,32 +1,9 @@
 import HeaderSection from "../components/HeaderSection";
-import CardCast from "../components/CardCast";
+import CardPerson from "../components/CardPerson";
 import LinkMore from "../components/LinkMore";
-// import Alert from "../components/Alert";
 import { cast } from "../data/cast";
 
 const CastSection = () => {
-    // const cardRealizations = (title) => {
-    //     switch(title) {
-    //         case "Wizerunkowe":
-    //             return (
-    //                 photo.realization.branding.length
-    //             );
-    //         case "Studyjne":
-    //             return (
-    //                 photo.realization.studio.length
-    //             );
-    //         case "Plenerowe":
-    //             return (
-    //                 photo.realization.outdoor.length
-    //             );
-    //         case "Produktowe":
-    //             return (
-    //                 photo.realization.product.length
-    //             );
-    //         default:
-    //     }
-    // }
-
     return (
         <section className="cast-section">
             <div className="container">
@@ -34,9 +11,9 @@ const CastSection = () => {
                     <HeaderSection
                         header="Obsada"
                     />
-                    <div className="card-wrapper cast">
+                    <div className="card-wrapper person">
                         {cast.length ? cast.map(item => (
-                            <CardCast
+                            <CardPerson
                                 key={item.id}
                                 cardTitle={item.name}
                                 cardDescription={item.role}
