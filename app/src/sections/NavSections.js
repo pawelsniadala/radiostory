@@ -36,6 +36,26 @@ const NavSection = () => {
                                     className="nav-link"
                                     activeclassname="active"
                                     aria-current="page"
+                                    to="/cast"
+                                >
+                                    Obsada
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    className="nav-link"
+                                    activeclassname="active"
+                                    aria-current="page"
+                                    to="/creator"
+                                >
+                                    Twórcy
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    className="nav-link"
+                                    activeclassname="active"
+                                    aria-current="page"
                                     to="/photo"
                                 >
                                     Zdjęcia
@@ -49,26 +69,6 @@ const NavSection = () => {
                                     to="/music"
                                 >
                                     Muzyka
-                                </NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    className="nav-link"
-                                    activeclassname="active"
-                                    aria-current="page"
-                                    to="/cast"
-                                >
-                                    Obsada
-                                </NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    className="nav-link"
-                                    activeclassname="active"
-                                    aria-current="page"
-                                    to="/production"
-                                >
-                                    Produkcja
                                 </NavLink>
                             </li>
                             <li className="nav-item">
