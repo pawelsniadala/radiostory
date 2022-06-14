@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { cast } from "../data/cast";
 import HeaderPage from "../components/HeaderPage";
-import CardCast from "../components/CardCast";
+import CardPerson from "../components/CardPerson";
 
 const CastView = () => {
     useEffect(() => {
@@ -15,9 +15,9 @@ const CastView = () => {
                     <HeaderPage header="Obsada" />
                 </div>
                 <div className="view-body container">
-                    <div className="card-wrapper cast">
+                    <div className="card-wrapper person">
                         {cast.length ? cast.map(item => (
-                            <CardCast
+                            <CardPerson
                                 key={item.id}
                                 cardTitle={item.name}
                                 cardDescription={item.role}
