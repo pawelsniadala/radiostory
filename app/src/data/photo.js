@@ -1,12 +1,22 @@
-import photoOriginal1 from "../assets/photo/original/photoOriginal1.jpg";
-import photoOriginal2 from "../assets/photo/original/photoOriginal2.jpg";
-import photoOriginal3 from "../assets/photo/original/photoOriginal3.jpg";
-import photoOriginal4 from "../assets/photo/original/photoOriginal4.jpg";
+import photoFilmOriginal1 from "../assets/photo/film/original/photoFilmOriginal1.jpg";
+import photoFilmOriginal2 from "../assets/photo/film/original/photoFilmOriginal2.jpg";
+import photoFilmOriginal3 from "../assets/photo/film/original/photoFilmOriginal3.jpg";
+import photoFilmOriginal4 from "../assets/photo/film/original/photoFilmOriginal4.jpg";
 
-import photoThumbnail1 from "../assets/photo/thumbnail/photoThumbnail1.jpg"
-import photoThumbnail2 from "../assets/photo/thumbnail/photoThumbnail2.jpg"
-import photoThumbnail3 from "../assets/photo/thumbnail/photoThumbnail3.jpg"
-import photoThumbnail4 from "../assets/photo/thumbnail/photoThumbnail4.jpg"
+import photoFilmThumbnail1 from "../assets/photo/film/thumbnail/photoFilmThumbnail1.jpg"
+import photoFilmThumbnail2 from "../assets/photo/film/thumbnail/photoFilmThumbnail2.jpg"
+import photoFilmThumbnail3 from "../assets/photo/film/thumbnail/photoFilmThumbnail3.jpg"
+import photoFilmThumbnail4 from "../assets/photo/film/thumbnail/photoFilmThumbnail4.jpg"
+
+import photoPlanOriginal1 from "../assets/photo/plan/original/photoPlanOriginal1.jpg";
+import photoPlanOriginal2 from "../assets/photo/plan/original/photoPlanOriginal2.jpg";
+import photoPlanOriginal3 from "../assets/photo/plan/original/photoPlanOriginal3.jpg";
+import photoPlanOriginal4 from "../assets/photo/plan/original/photoPlanOriginal4.jpg";
+
+import photoPlanThumbnail1 from "../assets/photo/plan/thumbnail/photoPlanThumbnail1.jpg"
+import photoPlanThumbnail2 from "../assets/photo/plan/thumbnail/photoPlanThumbnail2.jpg"
+import photoPlanThumbnail3 from "../assets/photo/plan/thumbnail/photoPlanThumbnail3.jpg"
+import photoPlanThumbnail4 from "../assets/photo/plan/thumbnail/photoPlanThumbnail4.jpg"
 
 export const photo = {
     "title": "Zdjęcia",
@@ -17,51 +27,80 @@ export const photo = {
             // title: "",
             // description: '',
             "thumbnail": {
-                "src": photoThumbnail1,
+                "src": photoFilmThumbnail1,
             },
-            "original": {
-                "src": photoOriginal1,
-                "width": "1920",
-                "height": "1280"
+            original: {
+                src: photoFilmOriginal1,
+                width: "1920",
+                height: "1280"
             }
         },
         {
             id: "904437fe-bb2d-4506-a060-7e4abb23d236",
             // title: "",
             // description: '',
-            "thumbnail": {
-                "src": photoThumbnail2,
+            thumbnail: {
+                src: photoFilmThumbnail2,
             },
-            "original": {
-                "src": photoOriginal2,
-                "width": "1920",
-                "height": "1272"
+            original: {
+                src: photoFilmOriginal2,
+                width: "1920",
+                height: "1272"
             }
         },
         {
             id: "d1420048-089c-4405-ae84-109d956f2cb9",
             // title: "",
             // description: '',
-            "thumbnail": {
-                "src": photoThumbnail3,
+            thumbnail: {
+                src: photoFilmThumbnail3,
             },
-            "original": {
-                "src": photoOriginal3,
-                "width": "1346",
-                "height": "926"
+            original: {
+                src: photoFilmOriginal3,
+                width: "1346",
+                height: "926"
             }
         },
         {
             id: "8497254e-6263-430b-ba65-a71270adde71",
             // title: "",
             // description: '',
-            "thumbnail": {
-                "src": photoThumbnail4,
+            thumbnail: {
+                src: photoFilmThumbnail4,
             },
-            "original": {
-                "src": photoOriginal4,
-                "width": "1920",
-                "height": "1259"
+            original: {
+                src: photoFilmOriginal4,
+                width: "1920",
+                height: "1259"
+            }
+        },
+
+
+
+        {
+            id: "d1420048-089c-4405-ae84-109d956f2cb9",
+            // title: "",
+            // description: '',
+            thumbnail: {
+                src: photoFilmThumbnail3,
+            },
+            original: {
+                src: photoFilmOriginal3,
+                width: "1346",
+                height: "926"
+            }
+        },
+        {
+            id: "8497254e-6263-430b-ba65-a71270adde71",
+            // title: "",
+            // description: '',
+            thumbnail: {
+                src: photoFilmThumbnail4,
+            },
+            original: {
+                src: photoFilmOriginal4,
+                width: "1920",
+                height: "1259"
             }
         }
     ],
@@ -71,10 +110,10 @@ export const photo = {
             // title: "",
             // description: '',
             "thumbnail": {
-                "src": photoThumbnail1,
+                "src": photoPlanThumbnail1,
             },
             "original": {
-                "src": photoOriginal1,
+                "src": photoPlanOriginal1,
                 "width": "1920",
                 "height": "1280"
             }
@@ -84,10 +123,10 @@ export const photo = {
             // title: "",
             // description: '',
             "thumbnail": {
-                "src": photoThumbnail2,
+                "src": photoPlanThumbnail2,
             },
             "original": {
-                "src": photoOriginal2,
+                "src": photoPlanOriginal2,
                 "width": "1920",
                 "height": "1272"
             }
@@ -97,10 +136,10 @@ export const photo = {
             // title: "",
             // description: '',
             "thumbnail": {
-                "src": photoThumbnail3,
+                "src": photoPlanThumbnail3,
             },
             "original": {
-                "src": photoOriginal3,
+                "src": photoPlanOriginal3,
                 "width": "1346",
                 "height": "926"
             }
@@ -110,10 +149,40 @@ export const photo = {
             // title: "",
             // description: '',
             "thumbnail": {
-                "src": photoThumbnail4,
+                "src": photoPlanThumbnail4,
             },
             "original": {
-                "src": photoOriginal4,
+                "src": photoPlanOriginal4,
+                "width": "1920",
+                "height": "1259"
+            }
+        },
+
+
+
+
+        {
+            id: "750f9ea7-2586-47b6-955d-7fe4b0cced7d",
+            // title: "",
+            // description: '',
+            "thumbnail": {
+                "src": photoPlanThumbnail2,
+            },
+            "original": {
+                "src": photoPlanOriginal2,
+                "width": "1920",
+                "height": "1272"
+            }
+        },
+        {
+            id: "bbf88515-8d39-4f0f-bba2-f5712f042901",
+            // title: "",
+            // description: '',
+            "thumbnail": {
+                "src": photoPlanThumbnail4,
+            },
+            "original": {
+                "src": photoPlanOriginal4,
                 "width": "1920",
                 "height": "1259"
             }
