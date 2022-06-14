@@ -12,7 +12,7 @@ import PhotoView from "./PhotoView";
 import MusicView from "./MusicView";
 import CastView from "./CastView";
 // import BackstageView from "./BackstageView";
-import ProductionView from "./ProductionView";
+import CreatorView from "./CreatorView";
 import ContactView from "./ContactView";
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial"
 import PhotoFilmPartial from "./partials/photo/PhotoFilmPartial"
@@ -75,7 +75,7 @@ const Root = () => (
                         <Route path="/backstage/video" element={<BackstageVideoPartial />} />
                         <Route path="/backstage/photo" element={<BackstagePhotoPartial />} />
                     </Route> */}
-                    <Route path="/production" element={<ProductionView />} />
+                    <Route path="/creator" element={<CreatorView />} />
                     <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>

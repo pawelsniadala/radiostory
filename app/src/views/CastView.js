@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { cast } from "../data/cast";
+import { Link } from "react-router-dom";
 import HeaderPage from "../components/HeaderPage";
 import CardPerson from "../components/CardPerson";
+import Typography from '@mui/material/Typography';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 const CastView = () => {
     useEffect(() => {
@@ -12,7 +16,23 @@ const CastView = () => {
         <div className="cast-view">
             <div className="view-wrapper">
                 <div className="view-header">
-                    <HeaderPage header="Obsada" />
+                    <div className="header-wrapper container">
+                        <Breadcrumbs
+                            separator={<NavigateNextIcon fontSize="small" />}
+                            aria-label="breadcrumb"
+                        >
+                            <Link
+                                to="/"
+                                aria-current="page"
+                            >
+                                Home
+                            </Link>
+                            <Typography color="text.primary">
+                                Obsada
+                            </Typography>
+                        </Breadcrumbs>
+                        <HeaderPage header="Obsada" />
+                    </div>
                 </div>
                 <div className="view-body container">
                     <div className="card-wrapper person">
