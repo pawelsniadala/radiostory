@@ -1,5 +1,5 @@
 const HeaderPage = ({ header }) => (
-    <div className="container header page">
+    <div className="header page">
         <h2 className="text">
             {header}
         </h2>
