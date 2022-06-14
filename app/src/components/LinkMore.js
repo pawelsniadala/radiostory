@@ -10,9 +10,9 @@ const LinkMore = ({
             className="button section"
             aria-current="page"
         >
-            <div class="divider" aria-hidden="true" />
-            <div class="text-wrapper" aria-label="Więcej obrazów">
-                <span class="text">
+            <div className="divider" aria-hidden="true" />
+            <div className="text-wrapper" aria-label="Więcej obrazów">
+                <span className="text">
                     {linkText}
                 </span>
             </div>
