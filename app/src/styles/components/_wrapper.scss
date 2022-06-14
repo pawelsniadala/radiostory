@@ -56,10 +56,10 @@ main {
         }
     }
 
-    &.cast {
+    &.person {
         display: grid;
         gap: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
         @media (max-width: 1199.98px) and (min-width: 992px) {
