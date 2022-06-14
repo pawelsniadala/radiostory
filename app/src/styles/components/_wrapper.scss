@@ -22,6 +22,11 @@ main {
     .view-header {
         background-color: #F2F3F5;
         border-bottom: 1px solid #dee2e6;
+
+        .header-wrapper {
+            padding-top: 1rem;
+            // padding-bottom: 1.5rem;
+        }
     }
 
     .view-body {
