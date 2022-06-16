@@ -1,14 +1,26 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { photo } from "../data/photo";
+import {
+    useState,
+    useEffect
+} from "react";
+import {
+    Link,
+    useLocation
+} from "react-router-dom";
 import HeaderPage from "../components/HeaderPage";
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoFilmPartial from "./partials/photo/PhotoFilmPartial";
 import PhotoPlanPartial from "./partials/photo/PhotoPlanPartial";
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 const PhotoView = () => {
+    const location = useLocation();
+
     const [ photoTab, setTab ] = useState(() => {
-        const pathname = window.location.pathname;
+        const pathname = location.pathname;
 
         const selectTab = (pathname) => {
             switch(pathname) {
@@ -53,47 +65,67 @@ const PhotoView = () => {
         }
     }
 
+    const selectTab = (e, path, tab) => {
+        const pathname = location.pathname;
+
+        pathname !== path ? setTab(tab) : e.preventDefault();
+    }
+
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
 
     return (
         <div className="photo-view">
-            <div className="view-wrapper container">
-                <HeaderPage header={photo.title} />
-                <div className="navpils">
-                    <ul className="nav nav-pills photo">
-                        <li className="nav-item">
+            <div className="view-wrapper">
+                <div className="view-header">
+                    <div className="header-wrapper container">
+                        <Breadcrumbs
+                            separator={<NavigateNextIcon fontSize="small" />}
+                            aria-label="breadcrumb"
+                        >
                             <Link
-                                to="/photo/all"
-                                className={(`nav-link ${photoTab === "photo-all" ? "active" : ""}`).trim()}
+                                to="/"
                                 aria-current="page"
-                                onClick={() => setTab("photo-all")}
                             >
-                                Wszystkie
+                                Home
                             </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/film"
-                                className={(`nav-link ${photoTab === "photo-film" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-film")}
-                            >
-                                Zdjęcia filmowe
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/plan"
-                                className={(`nav-link ${photoTab === "photo-plan" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-plan")}
-                            >
-                                Zdjęcia z planu filmowego
-                            </Link>
-                        </li>
-                    </ul>
+                            <Typography color="text.primary">
+                                Zdjęcia
+                            </Typography>
+                        </Breadcrumbs>
+                        <HeaderPage header="Zdjęcia" />
+                        <Tabs
+                            value={location.pathname}
+                            variant="scrollable"
+                            scrollButtons="auto"
+                            aria-label="scrollable auto tabs example"
+                        >
+                            <Tab
+                                label="Wszystkie"
+                                component={Link}
+                                to={`/photo`}
+                                value={`/photo`}
+                                onClick={(e) => selectTab(e, "/photo", "photo-all")}
+                            />
+                            <Tab
+                                label="Zdjęcia filmowe"
+                                component={Link}
+                                to={`/photo/film`}
+                                value={`/photo/film`}
+                                onClick={(e) => selectTab(e, "/photo/film", "photo-film")}
+                            />
+                            <Tab
+                                label="Zdjęcia z planu filmowego"
+                                component={Link}
+                                to={`/photo/plan`}
+                                value={`/photo/plan`}
+                                onClick={(e) => selectTab(e, "/photo/plan", "photo-plan")}
+                            />
+                        </Tabs>
+                    </div>
+                </div>
+                <div className="view-body container">
                     <div className="tab-content"
                         id="pills-photo-tab-content"
                     >
@@ -112,64 +144,3 @@ const PhotoView = () => {
 }
 
 export default PhotoView;
-
-
-
-
-
-
-
-
-
-
-
-// import { useEffect } from "react";
-// import { Gallery, Item } from "react-photoswipe-gallery";
-// import { photo } from "../data/photo";
-// import PageHeader from "../components/PageHeader";
-// import Card from "../components/Card";
-
-// const PhotoView = () => {
-//     useEffect(() => {
-//         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-//     }, []);
-
-//     return (
-//         <div className="photo-view">
-//             <div className="view-wrapper container">
-//                 <PageHeader header={photo.title} />
-//                 <section className="photo-section">
-//                     <div className="section-wrapper">
-//                         <div className="card-wrapper photo">
-//                             <Gallery>
-//                                 {photo.film.length ? photo.film.map((item) => (
-//                                     <Item
-//                                         key={item.id}
-//                                         original={item.original.src}
-//                                         thumbnail={item.thumbnail.src}
-//                                         width={item.original.width}
-//                                         height={item.original.height}
-//                                         title={item.title}
-//                                     >
-//                                         {({ ref, open }) => (
-//                                             <Card
-//                                                 cardTitle={item.title}
-//                                                 cardPhotoSrc={item.thumbnail.src}
-//                                                 layoutRef={ref}
-//                                                 onClick={open}
-//                                             />
-//                                         )}
-//                                     </Item>
-//                                 )) : (
-//                                     <div />
-//                                 )}
-//                             </Gallery>
-//                         </div>
-//                     </div>
-//                 </section>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default PhotoView;

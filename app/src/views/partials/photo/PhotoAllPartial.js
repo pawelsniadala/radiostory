@@ -21,7 +21,7 @@ const PhotoAllPartial = () => {
         <div className="photo-all-partial">
             <section className="realization-section">
                 <div className="section-wrapper">
-                    <div className="card-wrapper realization photo">
+                    <div className="card-wrapper photo">
                         <Gallery>
                             {all.length ? all.map((item) => (
                                 <Item

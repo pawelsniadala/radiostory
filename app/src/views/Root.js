@@ -14,9 +14,15 @@ import CastView from "./CastView";
 // import BackstageView from "./BackstageView";
 import CreatorView from "./CreatorView";
 import ContactView from "./ContactView";
+
+import CastAllPartial from "./partials/cast/CastAllPartial";
+import CastMainPartial from "./partials/cast/CastMainPartial";
+import CastOtherPartial from "./partials/cast/CastOtherPartial";
+
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial"
 import PhotoFilmPartial from "./partials/photo/PhotoFilmPartial"
 import PhotoPlanPartial from "./partials/photo/PhotoPlanPartial"
+
 // import VideoAllPartial from "./partials/video/VideoAllPartial";
 // import VideoDebatePartial from "./partials/video/VideoDebatePartial";
 // import VideoImmovablesPartial from "./partials/video/VideoImmovablesPartial";
@@ -63,7 +69,11 @@ const Root = () => (
                         <Route path="/photo/plan" element={<PhotoPlanPartial />} />
                     </Route>
                     <Route path="/music" element={<MusicView />} />
-                    <Route path="/cast" element={<CastView />} />
+                    <Route path="/cast" element={<CastView />}>
+                        <Route path="/cast/all" element={<CastAllPartial />} />
+                        <Route path="/cast/main" element={<CastMainPartial />} />
+                        <Route path="/cast/other" element={<CastOtherPartial />} />
+                    </Route>
                         {/* <Route path="/photo/all" element={<PhotoAllPartial />} />
                         <Route path="/photo/branding" element={<PhotoBrandingPartial />} />
                         <Route path="/photo/studio" element={<PhotoStudioPartial />} />

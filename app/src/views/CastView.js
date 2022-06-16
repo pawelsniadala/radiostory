@@ -1,13 +1,76 @@
-import { useEffect } from "react";
-import { cast } from "../data/cast";
-import { Link } from "react-router-dom";
+import {
+    useState,
+    useEffect
+} from "react";
+import {
+    Link,
+    useLocation
+} from "react-router-dom";
 import HeaderPage from "../components/HeaderPage";
-import CardPerson from "../components/CardPerson";
-import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import CastAllPartial from "./partials/cast/CastAllPartial";
+import CastMainPartial from "./partials/cast/CastMainPartial";
+import CastOtherPartial from "./partials/cast/CastOtherPartial";
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 const CastView = () => {
+    const location = useLocation();
+
+    const [ castTab, setTab ] = useState(() => {
+        const pathname = location.pathname;
+
+        const selectTab = (pathname) => {
+            switch(pathname) {
+                case "/cast":
+                    return (
+                        "cast-all"
+                    );
+                case "/cast/all":
+                    return (
+                        "cast-all"
+                    );
+                case "/cast/main":
+                    return (
+                        "cast-main"
+                    );
+                case "/cast/other":
+                    return (
+                        "cast-other"
+                    );
+                default:
+            }
+        }
+
+        return selectTab(pathname);
+    });
+
+    const renderTabContent = (castTab) => {
+        switch(castTab) {
+            case "cast-all":
+                return (
+                    <CastAllPartial />
+                );
+            case "cast-main":
+                return (
+                    <CastMainPartial />
+                );
+            case "cast-other":
+                return (
+                    <CastOtherPartial />
+                );
+            default:
+        }
+    }
+
+    const selectTab = (e, path, tab) => {
+        const pathname = location.pathname;
+
+        pathname !== path ? setTab(tab) : e.preventDefault();
+    }
+
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
@@ -32,20 +95,47 @@ const CastView = () => {
                             </Typography>
                         </Breadcrumbs>
                         <HeaderPage header="Obsada" />
+                        <Tabs
+                            value={location.pathname}
+                            variant="scrollable"
+                            scrollButtons="auto"
+                            aria-label="scrollable auto tabs example"
+                        >
+                            <Tab
+                                label="Cała obsada"
+                                component={Link}
+                                to={`/cast`}
+                                value={`/cast`}
+                                onClick={(e) => selectTab(e, "/cast", "cast-all")}
+                            />
+                            <Tab
+                                label="W rolach głównych"
+                                component={Link}
+                                to={`/cast/main`}
+                                value={`/cast/main`}
+                                onClick={(e) => selectTab(e, "/cast/main", "cast-main")}
+                            />
+                            <Tab
+                                label="W pozostałych rolach"
+                                component={Link}
+                                to={`/cast/other`}
+                                value={`/cast/other`}
+                                onClick={(e) => selectTab(e, "/cast/other", "cast-other")}
+                            />
+                        </Tabs>
                     </div>
                 </div>
                 <div className="view-body container">
-                    <div className="card-wrapper person">
-                        {cast.length ? cast.map(item => (
-                            <CardPerson
-                                key={item.id}
-                                cardTitle={item.name}
-                                cardDescription={item.role}
-                                cardImg={item.img}
-                            />
-                        )) : (
-                            <div />
-                        )}
+                    <div className="tab-content"
+                        id="pills-cast-tab-content"
+                    >
+                        <div className="tab-pane fade show active"
+                            id={`pills-${castTab}`}
+                            role="tabpanel"
+                            aria-labelledby={`pills-${castTab}-tab`}
+                        >
+                            {renderTabContent(castTab)}
+                        </div>
                     </div>
                 </div>
             </div>
