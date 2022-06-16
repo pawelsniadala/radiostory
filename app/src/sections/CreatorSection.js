@@ -1,7 +1,7 @@
 import HeaderSection from "../components/HeaderSection";
 import CardPerson from "../components/CardPerson";
 import LinkMore from "../components/LinkMore";
-import { cast } from "../data/cast";
+import { creator } from "../data/creator";
 
 const CreatorSection = () => {
     return (
@@ -12,7 +12,7 @@ const CreatorSection = () => {
                         header="Twórcy"
                     />
                     <div className="card-wrapper person">
-                        {cast.length ? cast.map(item => (
+                        {creator.length ? creator.map(item => (
                             <CardPerson
                                 key={item.id}
                                 cardTitle={item.name}
@@ -24,7 +24,7 @@ const CreatorSection = () => {
                         )}
                     </div>
                     <LinkMore
-                        linkTo="/cast"
+                        linkTo="/creator"
                         linkText="Zobacz wszystkich twórców"
                     />
                 </div>

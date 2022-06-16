@@ -12,7 +12,7 @@ const CastSection = () => {
                         header="Obsada"
                     />
                     <div className="card-wrapper person">
-                        {cast.length ? cast.map(item => (
+                        {cast.main.length ? cast.main.slice(0,4).map(item => (
                             <CardPerson
                                 key={item.id}
                                 cardTitle={item.name}
