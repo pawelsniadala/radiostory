@@ -20,14 +20,22 @@ const NavSection = () => {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div className="offcanvas offcanvas-start"
+                    tabIndex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
                     <div className="offcanvas-header">
                         <h5 className="offcanvas-title"
                             id="offcanvasNavbarLabel"
                         >
                             Radiostory
                         </h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button"
+                            className="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                        </button>
                     </div>
                     <div className="offcanvas-body navbar-light" id="navbarSupportedContent">
                         <ul className="navbar-nav justify-content-end flex-grow-1">
