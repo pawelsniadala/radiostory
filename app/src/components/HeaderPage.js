@@ -3,7 +3,6 @@ const HeaderPage = ({ header }) => (
         <h2 className="text">
             {header}
         </h2>
-        {/* <hr className="divider" /> */}
     </div>
 );
 
