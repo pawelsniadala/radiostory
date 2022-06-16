@@ -4,6 +4,15 @@ import LinkMore from "../components/LinkMore";
 import { creator } from "../data/creator";
 
 const CreatorSection = () => {
+    const all = [
+        ...creator.direction,
+        ...creator.photo,
+        ...creator.montage,
+        ...creator.makeup,
+        ...creator.management,
+        ...creator.camera
+    ];
+
     return (
         <section className="cast-section">
             <div className="container">
@@ -12,7 +21,7 @@ const CreatorSection = () => {
                         header="Twórcy"
                     />
                     <div className="card-wrapper person">
-                        {creator.length ? creator.map(item => (
+                        {all.length ? all.slice(0,4).map(item => (
                             <CardPerson
                                 key={item.id}
                                 cardTitle={item.name}
