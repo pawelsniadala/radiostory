@@ -43,7 +43,7 @@ const Root = () => (
             <main>
                 <Routes>
                     <Route exact path="/" element={<HomeView />} />
-                    {/* <Route exact path="https://brodaczmedia.pl" element={<HomeView />} /> */}
+                    <Route exact path="https://pawelsniadala.github.io/radiostory/" element={<HomeView />} />
                     <Route path="/creator" element={<CreatorView />}>
                         <Route path="/creator/all" element={<CreatorAllPartial />} />
                         <Route path="/creator/direction" element={<CreatorDirectionPartial />} />
