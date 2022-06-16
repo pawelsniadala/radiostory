@@ -1,7 +1,5 @@
-// import Iframe from "react-iframe";
 import ReactImageAppear from "react-image-appear";
-// import SearchZoomSvg from "../assets/common/SearchZoomSvg";
-// import PlayVideoSvg from "../assets/common/PlayVideoSvg";
+import ZoomInIcon from "@mui/icons-material/ZoomIn";
 
 const CardPhoto = ({
     cardTitle,
@@ -20,7 +18,7 @@ const CardPhoto = ({
                 showLoader={false}
             />
             <span onClick={onClick}>
-                {/* <SearchZoomSvg /> */}
+                <ZoomInIcon sx={{ fontSize: 60 }} />
             </span>
         </div>
     </div>
