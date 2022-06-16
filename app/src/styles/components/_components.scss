@@ -1,7 +1,10 @@
 @import "wrapper";
-@import "breadcrumbs";
 @import "header";
 @import "card";
 @import "navpils";
 @import "link";
 @import "scrollArrow";
+
+// material-ui
+@import "breadcrumbs";
+@import "tabs.scss";
