@@ -102,7 +102,7 @@ const CastView = () => {
                             aria-label="scrollable auto tabs example"
                         >
                             <Tab
-                                label="Cała obsada"
+                                label="Pełna obsada"
                                 component={Link}
                                 to={`/cast`}
                                 value={`/cast`}

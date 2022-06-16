@@ -20,8 +20,6 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-import ListIcon from '@mui/icons-material/List';
-
 const CreatorView = () => {
     const location = useLocation();
 

@@ -102,7 +102,7 @@ const PhotoView = () => {
                             aria-label="scrollable auto tabs example"
                         >
                             <Tab
-                                label="Wszystkie"
+                                label="Wszystkie zdjęcia"
                                 component={Link}
                                 to={`/photo`}
                                 value={`/photo`}
