@@ -1,11 +1,70 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import {
+    useState,
+    useEffect
+} from "react";
+import {
+    Link,
+    useLocation
+} from "react-router-dom";
 import HeaderPage from "../components/HeaderPage";
-import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ContactFormPartial from "./partials/contact/ContactFormPartial";
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
-const PhotoView = () => {
+const ContactView = () => {
+    const location = useLocation();
+
+    const [ contactTab, setTab ] = useState(() => {
+        const pathname = location.pathname;
+
+        const selectTab = (pathname) => {
+            switch(pathname) {
+                case "/contact":
+                    return (
+                        "contact-form"
+                    );
+                case "/contact/form":
+                    return (
+                        "contact-form"
+                    );
+                case "/contact/film":
+                    return (
+                        "contact-film"
+                    );
+                case "/contact/plan":
+                    return (
+                        "contact-plan"
+                    );
+                default:
+            }
+        }
+
+        return selectTab(pathname);
+    });
+
+    const renderTabContent = (contactTab) => {
+        switch(contactTab) {
+            case "contact-form":
+                return (
+                    <ContactFormPartial />
+                );
+            case "contact-film":
+                return (
+                    <ContactFormPartial />
+                );
+            default:
+        }
+    }
+
+    const selectTab = (e, path, tab) => {
+        const pathname = location.pathname;
+
+        pathname !== path ? setTab(tab) : e.preventDefault();
+    }
+
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
@@ -16,7 +75,7 @@ const PhotoView = () => {
                 <div className="view-header">
                     <div className="header-wrapper container">
                         <Breadcrumbs
-                            separator={<NavigateNextIcon fontSize="small" />}
+                            separator={<NavigateNextIcon fontSize="smform" />}
                             aria-label="breadcrumb"
                         >
                             <Link
@@ -30,14 +89,45 @@ const PhotoView = () => {
                             </Typography>
                         </Breadcrumbs>
                         <HeaderPage header="Kontakt" />
+                        <Tabs
+                            value={location.pathname}
+                            variant="scrollable"
+                            scrollButtons="auto"
+                            aria-label="scrollable auto tabs example"
+                        >
+                            <Tab
+                                label="Formularz kontaktowy"
+                                component={Link}
+                                to={`/contact`}
+                                value={`/contact`}
+                                onClick={(e) => selectTab(e, "/contact", "contact-form")}
+                            />
+                            {/* <Tab
+                                label="Zdjęcia filmowe"
+                                component={Link}
+                                to={`/contact/film`}
+                                value={`/contact/film`}
+                                onClick={(e) => selectTab(e, "/contact/film", "contact-film")}
+                            /> */}
+                        </Tabs>
                     </div>
                 </div>
                 <div className="view-body container">
-                    <p>In egestas ex ut massa scelerisque, a consectetur sem fringilla. Nam luctus augue non est accumsan, in venenatis augue hendrerit. Aenean vel lorem nec mauris mollis ultrices. Etiam pharetra arcu ac turpis varius, nec efficitur nunc varius. Donec lectus metus, sagittis sed nibh ut, imperdiet iaculis nunc. Phasellus malesuada, enim a volutpat gravida, est felis lobortis sem, eget consequat erat ligula non lorem. Mauris posuere quam sit amet velit tincidunt, sit amet consequat ipsum congue. Suspendisse mattis turpis quis suscipit ornare. Ut sit amet porta urna.</p>
+                    <div className="tab-content"
+                        id="pills-contact-tab-content"
+                    >
+                        <div className="tab-pane fade show active"
+                            id={`pills-${contactTab}`}
+                            role="tabpanel"
+                            aria-labelledby={`pills-${contactTab}-tab`}
+                        >
+                            {renderTabContent(contactTab)}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default PhotoView;
+export default ContactView;

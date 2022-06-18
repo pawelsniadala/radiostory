@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
 import NavSection from "../sections/NavSections";
-// import FooterSection from "../sections/FooterSection";
+import FooterSection from "../sections/FooterSection";
 import HomeView from "./HomeView";
 // import VideoView from "./VideoView";
 import PhotoView from "./PhotoView";
@@ -69,8 +69,8 @@ const Root = () => (
                 </Routes>
             </main>
             {/* <Modal />
-            <Toast />
-            <FooterSection /> */}
+            <Toast /> */}
+            <FooterSection />
             <ScrollArrow />
         </Router>
     </MainTemplate>
