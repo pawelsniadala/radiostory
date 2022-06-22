@@ -137,13 +137,14 @@ const PhotoFilmPartial = () => {
                                     rows={4}
                                 />
                                 </div>
-
-                                <Button
-                                    variant="contained"
-                                    size="large"
-                                >
-                                    Wyślij wiadomość
-                                </Button>
+                                <div className="send">
+                                    <Button
+                                        variant="contained"
+                                        size="large"
+                                    >
+                                        Wyślij wiadomość
+                                    </Button>
+                                </div>
                             </form>
                             </div>
                         </div>

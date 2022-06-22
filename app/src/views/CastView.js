@@ -100,6 +100,7 @@ const CastView = () => {
                             variant="scrollable"
                             scrollButtons="auto"
                             aria-label="scrollable auto tabs example"
+                            TabIndicatorProps={{ style: { background: "#991111" }}}
                         >
                             <Tab
                                 label="Pełna obsada"
