@@ -7,10 +7,13 @@
             align-items: center;
             text-decoration: none;
             color: #212529;
+            color: #c4b888;
+            // font-weight: 500;
 
             .divider {
                 position: absolute;
-                background-color: #dee2e6;
+                // background-color: #dee2e6;
+                background-color: #c4b888;
                 height: 1px;
                 left: 0;
                 width: 100%;
@@ -23,12 +26,17 @@
                 z-index: 2;
                 background: #F2F3F5;
                 background: #fff;
-                border: 1px solid #dee2e6;
+                background: #d5d3bf;
+                background: lighten(#e8e7da, 5%);
+                // border: 1px solid #dee2e6;
+                border: 1px solid #c4b888;
                 width: 300px;
                 padding: 7px 11px;
+                border-radius: 980px;
 
                 .text {
-                    text-transform: uppercase;
+                    // text-transform: uppercase;
+                    color: darken(#c4b888, 20%);
                 }
             }
         }

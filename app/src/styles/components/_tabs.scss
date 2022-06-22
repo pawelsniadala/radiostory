@@ -1,7 +1,12 @@
 .MuiTabs-root {
     a {
         &:hover {
-            color: #1976d2;
+            // color: #1976d2;
+            color: #991111;
         }
     }
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #991111 !important;
 }

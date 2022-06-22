@@ -2,8 +2,9 @@
     &.photo {
         display: inline-block !important;
         background-color: transparent;
-        margin-bottom: 1rem;
-        border-radius: 0;
+        margin-bottom: 0.5rem;
+        // border-radius: 0;
+        border-radius: 8px;
         border: none;
         cursor: pointer;
 
@@ -13,7 +14,10 @@
 
             .card-img-top {
                 transition: filter .3s;
-                border-radius: 0;
+                // border-radius: 0;
+                border-radius: calc(8px - 1px);
+                // border-top-left-radius: calc(16px - 1px);
+                // border-top-right-radius: calc(16px - 1px);
             }
 
             svg {
@@ -43,29 +47,39 @@
 
     &.person {
         display: inline-block !important;
-        background-color: #ffffff;
-        border: 1px solid #dee2e6;
-        // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        border-radius: 0;
+        // background-color: #ffffff;
+        background-color: #d5d3bf;
+        background-color: lighten(#e8e7da, 5%);
+        // border: 1px solid #dee2e6;
+        // border: 2px solid #D6D3BA;
+        // border: 1px solid #c4b888;
+        border: 1px solid #c4b888;
+        // border: none;
+        // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        // border-radius: 0;
+        border-radius: 8px;
 
         .card-img-top {
             border-radius: 0;
+            border-top-left-radius: calc(8px - 1px);
+            border-top-right-radius: calc(8px - 1px);
             user-select: none;
         }
 
         .card-body {
             .card-title {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 font-weight: 400;
 
             }
 
             .card-text {
                 font-weight: 400;
-                font-size: 1.1rem;
+                font-size: 1.05rem;
                 line-height: 1.43;
                 letter-spacing: 0.01071em;
-                color: #1976d2;
+                // color: #1976d2;
+                color: #991111;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
