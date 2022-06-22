@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import arrowUp from "./../assets/common/arrowUp.svg";
+import Button from '@mui/material/Button';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const ScrollArrow = () => {
@@ -24,11 +24,10 @@ const ScrollArrow = () => {
             onClick={scrollTop}
             style={{ display: showScroll ? "flex" : "none" }}
         >
-            <button className="btn btn-secondary">
-                {/* <i className="fas fa-arrow-up" /> */}
-                {/* <img src={arrowUp} alt="arrowUp" /> */}
-                <ArrowUpwardIcon fontSize="large" color="disabled" />
-            </button>
+            <Button variant="contained" size="">
+                <ArrowUpwardIcon fontSize="large" htmlColor="#f8f9fa" />
+            </Button>
+
         </div>
     );
 }
