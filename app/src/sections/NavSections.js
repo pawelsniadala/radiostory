@@ -69,7 +69,7 @@ const NavSection = () => {
                                     Zdjęcia
                                 </NavLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
                                     activeclassname="active"
@@ -78,7 +78,7 @@ const NavSection = () => {
                                 >
                                     Muzyka
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link"

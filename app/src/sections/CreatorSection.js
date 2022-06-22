@@ -21,7 +21,7 @@ const CreatorSection = () => {
                         header="Twórcy"
                     />
                     <div className="card-wrapper person">
-                        {all.length ? all.slice(0,4).map(item => (
+                        {all.length ? all.slice(0,5).map(item => (
                             <CardPerson
                                 key={item.id}
                                 cardTitle={item.name}

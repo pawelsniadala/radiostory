@@ -48,10 +48,10 @@ const FooterSection = () => {
                         ))} */}
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis a metus sed tempus. Proin est est, semper sit amet placerat eu, tristique eget mi. Vivamus velit ex, luctus commodo lacus at, mollis viverra erat. Cras leo nunc, euismod facilisis commodo.</p>
                     </div>
-                    <div className="foto">
-                        <h5 className="footer-subheader">Twórcy</h5>
+                    <div className="video">
+                        <h5 className="footer-subheader">Obsada</h5>
                         <ul className="list-group-flush">
-                            {footer.photo.length && footer.photo.map(item => (
+                            {footer.video.length && footer.video.map(item => (
                                 <li key={item.id}
                                     className="list-group-item"
                                 >
@@ -62,10 +62,10 @@ const FooterSection = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="video">
-                        <h5 className="footer-subheader">Obsada</h5>
+                    <div className="foto">
+                        <h5 className="footer-subheader">Twórcy</h5>
                         <ul className="list-group-flush">
-                            {footer.video.length && footer.video.map(item => (
+                            {footer.photo.length && footer.photo.map(item => (
                                 <li key={item.id}
                                     className="list-group-item"
                                 >
