@@ -22,7 +22,7 @@
 .jumbotron {
     .photo-wrapper {
         position: relative;
-        background: url("../../assets/poster/poster.jpg") 0 0 no-repeat;
+        background: url("../../assets/poster/poster.jpg") 60% 0 no-repeat;
         background-size: cover;
 
         &::after {
@@ -33,8 +33,9 @@
         .content-wrapper {
             text-align: center;
             @include bd-relative-zindex;
-            padding-top: 450px;
-            padding-bottom: 450px;
+            // padding-top: 450px;
+            // padding-bottom: 450px;
+            height: calc(100vh - 48px);
 
             .company-wrapper {
                 position: absolute;
@@ -43,24 +44,28 @@
                 z-index: 2;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: end;
                 width: 100%;
                 padding: 0;
                 text-align: center;
                 background: 0 0;
                 border: 0;
                 flex-direction: column;
+                padding-bottom: 1rem;
 
                 .company-name {
-                    font-family: "Catamaran", sans-serif;
+                    // font-family: "Catamaran", sans-serif;
                     letter-spacing: 1px;
-                    font-weight: 400;
+                    // font-weight: 400;
                     text-transform: uppercase;
-                    color: #fff;
-                    opacity: 0;
-                    animation: fadeIn .3s;
-                    animation-delay: .3s;
-                    animation-fill-mode: forwards;
+                    // color: #fff;
+                    color: rgba(255,255,255,.95);
+                    // opacity: 0;
+                    // animation: fadeIn .3s;
+                    // animation-delay: .3s;
+                    // animation-fill-mode: forwards;
+                    font-weight: 800;
+                    letter-spacing: 10px;
 
                     @keyframes fadeIn {
                         from {
@@ -70,6 +75,40 @@
                             opacity: 1;
                         }
                     }
+                }
+
+                .description {
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    // gap: 1.25rem;
+                    // opacity: 0;
+                    // animation: fadeIn .3s;
+                    // animation-delay: .3s;
+                    // animation-fill-mode: forwards;
+                    font-size: 0.95rem;
+                    font-weight: 300;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    // color: #fff;
+                    color: rgba(255,255,255,.65);
+
+
+                    .text {
+                        .heading {
+                            font-weight: 600;
+                        }
+
+                        .item {
+                            padding: 5px;
+                        }
+                    }
+
+                    .info {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+
+
                 }
 
                 .company-services {
@@ -89,4 +128,3 @@
         }
     }
 }
-

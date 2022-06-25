@@ -178,10 +178,12 @@ footer {
 
         // border: 1px solid #c4b888;
 
-        border-top-left-radius: 8px;
+        // border-top-left-radius: 8px;
+        border-radius: 8px;
 
         img {
-            border-top-left-radius: calc(8px - 1px);
+            // border-top-left-radius: calc(8px - 1px);
+            border-radius: calc(8px - 1px);
         }
     }
 
@@ -195,6 +197,13 @@ footer {
         // border-bottom: 1px solid #c4b888;
 
         // border: 1px solid #c4b888;
+
+        border-radius: 8px;
+
+        img {
+            // border-top-left-radius: calc(8px - 1px);
+            border-radius: calc(8px - 1px);
+        }
     }
 
     .a3 {
@@ -208,10 +217,17 @@ footer {
 
         // border: 1px solid #c4b888;
 
-        border-top-right-radius: 8px;
+        // border-top-right-radius: 8px;
+
+        // img {
+        //     border-top-right-radius: calc(8px - 1px);
+        // }
+
+        border-radius: 8px;
 
         img {
-            border-top-right-radius: calc(8px - 1px);
+            // border-top-left-radius: calc(8px - 1px);
+            border-radius: calc(8px - 1px);
         }
     }
 
@@ -226,10 +242,16 @@ footer {
 
         // border: 1px solid #c4b888;
 
-        border-bottom-left-radius: 8px;
+        // border-bottom-left-radius: 8px;
+
+        // img {
+        //     border-bottom-left-radius: calc(8px - 1px);
+        // }
+        border-radius: 8px;
 
         img {
-            border-bottom-left-radius: calc(8px - 1px);
+            // border-top-left-radius: calc(8px - 1px);
+            border-radius: calc(8px - 1px);
         }
     }
 
@@ -243,6 +265,12 @@ footer {
         // border-bottom: 2px solid #c4b888;
 
         // border: 1px solid #c4b888;
+        border-radius: 8px;
+
+        img {
+            // border-top-left-radius: calc(8px - 1px);
+            border-radius: calc(8px - 1px);
+        }
     }
 
     .a6 {
@@ -256,10 +284,16 @@ footer {
 
         // border: 1px solid #c4b888;
 
-        border-bottom-right-radius: 16px;
+        // border-bottom-right-radius: 16px;
+
+        // img {
+        //     border-bottom-right-radius: calc(16px - 1px);
+        // }
+        border-radius: 8px;
 
         img {
-            border-bottom-right-radius: calc(16px - 1px);
+            // border-top-left-radius: calc(8px - 1px);
+            border-radius: calc(8px - 1px);
         }
     }
 }
