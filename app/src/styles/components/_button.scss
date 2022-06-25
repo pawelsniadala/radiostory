@@ -17,6 +17,8 @@
         background-color: #3f301d;
         background-color: darken(#c4b888, 20%);
         background-color: darken(#b88c64, 10%);
+        background-color: #991111;
+        background-color: darken(#c4b888, 20%);
         // opacity: 0.4;
         // border: none;
         // cursor: pointer;
@@ -47,6 +49,7 @@ body.modal-open {
     button.MuiButton-root {
         background-color: #c4b888;
         background-color: darken(#b88c64, 10%);
+        background-color: darken(#c4b888, 20%);
         // background-color: #b88c64;
     }
 }
