@@ -22,7 +22,7 @@
 .jumbotron {
     .photo-wrapper {
         position: relative;
-        background: url("../../assets/poster/poster.jpg") 60% 0 no-repeat;
+        background: url("../../assets/poster/poster.jpg") 65% 0 no-repeat;
         background-size: cover;
 
         &::after {
@@ -55,6 +55,7 @@
 
                 .company-name {
                     // font-family: "Catamaran", sans-serif;
+                    font-size: calc(1.625rem + 4vw);
                     letter-spacing: 1px;
                     // font-weight: 400;
                     text-transform: uppercase;
@@ -85,12 +86,18 @@
                     // animation: fadeIn .3s;
                     // animation-delay: .3s;
                     // animation-fill-mode: forwards;
-                    font-size: 0.95rem;
+                    // font-size: 0.95rem;
+                    font-size: calc(0.4rem + 0.45vw);
                     font-weight: 300;
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
                     // color: #fff;
                     color: rgba(255,255,255,.65);
+
+                    @media (max-width: 767.98px) {
+                        font-size: 0.55rem;
+                        letter-spacing: 0px;
+                    }
 
 
                     .text {
@@ -100,12 +107,23 @@
 
                         .item {
                             padding: 5px;
+                            display: inline-block;
+                            width: max-content;
+
+                            @media (max-width: 767.98px) {
+                                padding: 2.5px;
+                            }
                         }
                     }
 
                     .info {
-                        font-size: 1.5rem;
+                        font-size: 2rem;
+                        font-size: calc(1rem + 1vw);
                         font-weight: 500;
+
+                        @media (max-width: 767.98px) {
+                            font-size: 1rem;
+                        }
                     }
 
 
