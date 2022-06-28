@@ -44,7 +44,7 @@ const PosterSection = () => {
                                 <span className="item">Aleksandra Kardynał</span>
                             </span>
                             <hr/>
-                            <span className="info">W kiach od 4 września</span>
+                            <span className="info">Wkrótce w kinach</span>
                         </div>
                     </div>
                 </div>
