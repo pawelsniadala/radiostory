@@ -15,7 +15,7 @@ nav.navbar {
     .container {
         &.container-fluid {
             .navbar-brand {
-                font-weight: 600;
+                font-weight: 500;
                 letter-spacing: 1px;
                 color: rgba(255,255,255,.55);
 
@@ -63,7 +63,7 @@ nav.navbar {
 
             .offcanvas-body {
                 .nav-link {
-                    text-transform: uppercase;
+                    // text-transform: uppercase;
                 }
             }
 
