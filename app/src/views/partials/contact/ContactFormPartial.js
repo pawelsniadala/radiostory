@@ -1,13 +1,8 @@
 import * as bootstrap from "bootstrap";
-
 import { useEffect, useRef  } from "react";
-
 import emailjs from "@emailjs/browser";
-
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-
-import Paper from '@mui/material/Paper';
 
 const PhotoFilmPartial = () => {
     useEffect(() => {
@@ -19,8 +14,7 @@ const PhotoFilmPartial = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_uu7euve", "template_bnuaglf", form.current, "nCwtxRyHnXpW-ROrH")
-        // emailjs.sendForm("service_hgver59", "template_kidfc2k", form.current, "_o3zGPDB_96l97OYE")
+        emailjs.sendForm("service_hgver59", "template_kidfc2k", form.current, "_o3zGPDB_96l97OYE") // pawel
             .then((result) => {
                 console.log(result.text);
                 showToast();
@@ -39,117 +33,58 @@ const PhotoFilmPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper contact">
-                      
-
-                    {/* <div className="card contact message">
-                            <div className="card-body">
-                            <Paper style={{ padding: "1rem" }} >
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div className="">
-
-                                    <TextField
-                                        helperText=" "
-                                        id="demo-helper-text-aligned-no-helper"
-                                        label="Imię i nazwisko"
-                                        fullWidth
-                                        size="small"
-                                    />
-                                </div>
-                                <div className="">
-                                    <TextField
-                                        helperText=" "
-                                        id="demo-helper-text-aligned-no-helper"
-                                        label="Adres e-mail"
-                                        fullWidth
-                                        size="small"
-                                    />
-                                </div>
-                                <div className="">
-                                <TextField
-                                        helperText=" "
-                                        id="demo-helper-text-aligned-no-helper"
-                                        label="Numer telefonu"
-                                        fullWidth
-                                        size="small"
-                                    />
-                                </div>
-                                <div>
-                                <TextField
-                                    id="outlined-multiline-static"
-                                    label="Wiadomość"
-                                    className="mb-4"
-                                    fullWidth
-                                    multiline
-                                    rows={4}
-                                />
-                                </div>
-
-                                <Button
-                                    variant="contained"
-                                    size="large"
-                                >
-                                    Wyślij wiadomość
-                                </Button>
-                            </form>
-                            </Paper>
-                            </div>
-                        </div> */}
-
-
                         <div className="card contact form">
                             <div className="card-body">
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div className="">
-
+                                <form ref={form} onSubmit={sendEmail}>
                                     <TextField
                                         helperText=" "
                                         id="demo-helper-text-aligned-no-helper"
                                         label="Imię i nazwisko"
                                         fullWidth
                                         size="small"
+                                        name="name"
+                                        required
                                     />
-                                </div>
-                                <div className="">
                                     <TextField
                                         helperText=" "
                                         id="demo-helper-text-aligned-no-helper"
                                         label="Adres e-mail"
                                         fullWidth
                                         size="small"
+                                        name="email"
+                                        required
                                     />
-                                </div>
-                                <div className="">
-                                <TextField
+                                    <TextField
                                         helperText=" "
                                         id="demo-helper-text-aligned-no-helper"
                                         label="Numer telefonu"
                                         fullWidth
                                         size="small"
+                                        name="phone"
+                                        required
                                     />
-                                </div>
-                                <div>
-                                <TextField
-                                    id="outlined-multiline-static"
-                                    label="Wiadomość"
-                                    className="mb-4"
-                                    fullWidth
-                                    multiline
-                                    rows={4}
-                                />
-                                </div>
-                                <div className="send">
-                                    <Button
-                                        variant="contained"
-                                        size="large"
-                                    >
-                                        Wyślij wiadomość
-                                    </Button>
-                                </div>
-                            </form>
+                                    <TextField
+                                        id="outlined-multiline-static"
+                                        label="Wiadomość"
+                                        className="mb-4"
+                                        fullWidth
+                                        multiline
+                                        rows={4}
+                                        name="message"
+                                        required
+                                    />
+                                    <div className="send">
+                                        <Button
+                                            variant="contained"
+                                            size="large"
+                                            type="submit"
+                                        >
+                                            Wyślij wiadomość
+                                        </Button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </section>
