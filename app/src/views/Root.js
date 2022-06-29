@@ -34,7 +34,7 @@ import PhotoPlanPartial from "./partials/photo/PhotoPlanPartial"
 
 import ScrollArrow from "../components/ScrollArrow";
 // import Modal from "../components/Modal";
-// import Toast from "../components/Toast";
+import Toast from "../components/Toast";
 
 const Root = () => (
     <MainTemplate>
@@ -43,7 +43,7 @@ const Root = () => (
             <main>
                 <Routes>
                     <Route exact path="/" element={<HomeView />} />
-                    <Route exact path="https://pawelsniadala.github.io/radiostory/" element={<HomeView />} />
+                    <Route exact path="/radiostory/" element={<HomeView />} />
                     <Route path="/creator" element={<CreatorView />}>
                         <Route path="/creator/all" element={<CreatorAllPartial />} />
                         <Route path="/creator/direction" element={<CreatorDirectionPartial />} />
@@ -68,8 +68,8 @@ const Root = () => (
                     <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>
-            {/* <Modal />
-            <Toast /> */}
+            {/* <Modal /> */}
+            <Toast />
             <FooterSection />
             <ScrollArrow />
         </Router>
