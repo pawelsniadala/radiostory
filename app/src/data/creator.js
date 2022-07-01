@@ -15,6 +15,15 @@ import creatorManagementThumbnail1 from "../assets/creator/management/creatorMan
 // camera
 import creatorCameraThumbnail1 from "../assets/creator/camera/creatorCameraThumbnail1.jpg";
 
+// steadicam
+import creatorSteadicamThumbnail1 from "../assets/creator/steadicam/creatorSteadicamThumbnail1.jpg";
+
+// script-slate
+import creatorScriptSlateThumbnail1 from "../assets/creator/scriptSlate/creatorScriptSlateThumbnail1.jpg";
+
+// color-grading
+import creatorColorGradingThumbnail1 from "../assets/creator/colorGrading/creatorColorGradingThumbnail1.jpg";
+
 export const creator = {
     direction: [
         {
@@ -118,4 +127,28 @@ export const creator = {
             img: creatorCameraThumbnail1
         }
     ],
+    steadicam: [
+        {
+            id: "afdc842a-3cca-4b70-8408-ed9623459499",
+            name: "Grzegorz Oleksa",
+            role: "Steadicam",
+            img: creatorSteadicamThumbnail1
+        }
+    ],
+    scriptSlate: [
+        {
+            id: "2d1ec5a3-2eef-412c-b734-e32f4f1ccc83",
+            name: "Anna Berent",
+            role: "Script/klaps",
+            img: creatorScriptSlateThumbnail1
+        }
+    ],
+    colorGrading: [
+        {
+            id: "a7df7964-3f59-46dc-b664-69fad12dbff2",
+            name: "Aleksander Krzystyniak",
+            role: "Color grading",
+            img: creatorColorGradingThumbnail1
+        }
+    ]
 }
