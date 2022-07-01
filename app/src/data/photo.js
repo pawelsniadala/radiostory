@@ -32,7 +32,7 @@ export const photo = {
     "film": [
         {
             id: "04c8b670-3309-459c-a9a2-4be65f9a4d89",
-            // title: "",
+            title: "Piotr Głowacki",
             // description: '',
             "thumbnail": {
                 "src": photoFilmThumbnail1,
@@ -45,7 +45,7 @@ export const photo = {
         },
         {
             id: "904437fe-bb2d-4506-a060-7e4abb23d236",
-            // title: "",
+            title: "Piotr Witkowski",
             // description: '',
             thumbnail: {
                 src: photoFilmThumbnail2,
@@ -58,7 +58,7 @@ export const photo = {
         },
         {
             id: "d1420048-089c-4405-ae84-109d956f2cb9",
-            // title: "",
+            title: "Tomasz Więcek, Dariusz Majchrzak",
             // description: '',
             thumbnail: {
                 src: photoFilmThumbnail3,
@@ -71,7 +71,7 @@ export const photo = {
         },
         {
             id: "8497254e-6263-430b-ba65-a71270adde71",
-            // title: "",
+            title: "Tomasz Więcek, Maciej Hydr",
             // description: '',
             thumbnail: {
                 src: photoFilmThumbnail4,
@@ -125,7 +125,7 @@ export const photo = {
         },
         {
             id: "750f9ea7-2586-47b6-955d-7fe4b0cced7d",
-            // title: "",
+            title: "Maciej Hydr, Aleksander Krzystyniak",
             // description: '',
             "thumbnail": {
                 "src": photoPlanThumbnail2,
@@ -138,7 +138,7 @@ export const photo = {
         },
         {
             id: "07fe6659-67db-401d-bb5b-d4d5f4ceeae1",
-            // title: "",
+            title: "Mateusz Rzońca, Aleksander Krzystyniak",
             // description: '',
             "thumbnail": {
                 "src": photoPlanThumbnail3,
@@ -151,7 +151,7 @@ export const photo = {
         },
         {
             id: "bbf88515-8d39-4f0f-bba2-f5712f042901",
-            // title: "",
+            title: "Maciej Hydr",
             // description: '',
             "thumbnail": {
                 "src": photoPlanThumbnail4,
