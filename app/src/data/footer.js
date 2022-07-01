@@ -2,10 +2,10 @@ export const footer = {
     business: [
         {
             id: "3f83e609-c625-4a9d-81e1-350c67307d62",
-            name: "Brodacz Media Mariusz Śniadała",
-            address: "Kornaciska 19, 07-210 Długosiodło",
-            nip: "NIP: 7622014234",
-            regon: "REGON: 521119841"
+            name: "Film w produkcji",
+            address: "Produkcja: Polska",
+            nip: "Rok produkcji: 2022",
+            regon: "Barwny, 104 min"
         }
     ],
     video: [

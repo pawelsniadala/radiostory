@@ -38,15 +38,16 @@ const FooterSection = () => {
                 <div className="section-wrapper footer">
                     <div className="business">
                         <h5 className="footer-subheader">Radiostory</h5>
-                        {/* {footer.business.length && footer.business.map(item => (
+                        {footer.business.length && footer.business.map(item => (
                             <div key={item.id} className="business-wrapper">
                                 <span>{item.name}</span>
                                 <span>{item.address}</span>
                                 <span>{item.nip}</span>
                                 <span>{item.regon}</span>
                             </div>
-                        ))} */}
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis a metus sed tempus. Proin est est, semper sit amet placerat eu, tristique eget mi. Vivamus velit ex, luctus commodo lacus at, mollis viverra erat. Cras leo nunc, euismod facilisis commodo.</p>
+                        ))}
+                        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis a metus sed tempus. Proin est est, semper sit amet placerat eu, tristique eget mi. Vivamus velit ex, luctus commodo lacus at, mollis viverra erat. Cras leo nunc, euismod facilisis commodo.</p>
+                        Produkcja: Polska */}
                     </div>
                     <div className="video">
                         <h5 className="footer-subheader">Obsada</h5>
