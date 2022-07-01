@@ -26,6 +26,9 @@ import CreatorMontagePartial from "./partials/creator/CreatorMontagePartial";
 import CreatorMakeupPartial from "./partials/creator/CreatorMakeupPartial";
 import CreatorManagementPartial from "./partials/creator/CreatorManagementPartial";
 import CreatorCameraPartial from "./partials/creator/CreatorCameraPartial";
+import CreatorSteadicamPartial from "./partials/creator/CreatorSteadicamPartial";
+import CreatorScriptSlatePartial from "./partials/creator/CreatorScriptSlatePartial";
+import CreatorColorGradingPartial from "./partials/creator/CreatorColorGradingPartial";
 
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial"
 import PhotoFilmPartial from "./partials/photo/PhotoFilmPartial"
@@ -52,6 +55,9 @@ const Root = () => (
                         <Route path="/creator/makeup" element={<CreatorMakeupPartial />} />
                         <Route path="/creator/management" element={<CreatorManagementPartial />} />
                         <Route path="/creator/camera" element={<CreatorCameraPartial />} />
+                        <Route path="/creator/steadicam" element={<CreatorSteadicamPartial />} />
+                        <Route path="/creator/script-slate" element={<CreatorScriptSlatePartial />} />
+                        <Route path="/creator/color-grading" element={<CreatorColorGradingPartial />} />
                     </Route>
 
                     <Route path="/photo" element={<PhotoView />}>

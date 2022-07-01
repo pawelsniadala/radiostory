@@ -14,10 +14,13 @@ import CreatorMontagePartial from "./partials/creator/CreatorMontagePartial";
 import CreatorMakeupPartial from "./partials/creator/CreatorMakeupPartial";
 import CreatorManagementPartial from "./partials/creator/CreatorManagementPartial";
 import CreatorCameraPartial from "./partials/creator/CreatorCameraPartial";
+import CreatorSteadicamPartial from "./partials/creator/CreatorSteadicamPartial";
+import CreatorScriptSlatePartial from "./partials/creator/CreatorScriptSlatePartial";
+import CreatorColorGradingPartial from "./partials/creator/CreatorColorGradingPartial";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import Tabs from "@mui/material/Tabs";
+import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 const CreatorView = () => {
@@ -60,6 +63,18 @@ const CreatorView = () => {
                     return (
                         "creator-camera"
                     );
+                case "/creator/steadicam":
+                    return (
+                        "creator-steadicam"
+                    );
+                case "/creator/script-slate":
+                    return (
+                        "creator-script-slate"
+                    );
+                case "/creator/color-grading":
+                    return (
+                        "creator-color-grading"
+                    );
                 default:
             }
         }
@@ -96,6 +111,18 @@ const CreatorView = () => {
             case "creator-camera":
                 return (
                     <CreatorCameraPartial />
+                );
+            case "creator-steadicam":
+                return (
+                    <CreatorSteadicamPartial />
+                );
+            case "creator-script-slate":
+                return (
+                    <CreatorScriptSlatePartial />
+                );
+            case "creator-color-grading":
+                return (
+                    <CreatorColorGradingPartial />
                 );
             default:
         }
@@ -137,6 +164,11 @@ const CreatorView = () => {
                             scrollButtons="auto"
                             aria-label="scrollable auto tabs example"
                             TabIndicatorProps={{ style: { background: "#991111" }}}
+                            sx={{
+                                [`& .${tabsClasses.scrollButtons}`]: {
+                                    '&.Mui-disabled': { opacity: 0.3 },
+                                },
+                            }}
                         >
                             <Tab
                                 label="Wszyscy twórcy"
@@ -186,6 +218,27 @@ const CreatorView = () => {
                                 to={`/creator/camera`}
                                 value={`/creator/camera`}
                                 onClick={(e) => selectTab(e, "/creator/camera", "creator-camera")}
+                            />
+                            <Tab
+                                label="Steadicam"
+                                component={Link}
+                                to={`/creator/steadicam`}
+                                value={`/creator/steadicam`}
+                                onClick={(e) => selectTab(e, "/creator/steadicam", "creator-steadicam")}
+                            />
+                            <Tab
+                                label="Script/Klaps"
+                                component={Link}
+                                to={`/creator/script-slate`}
+                                value={`/creator/script-slate`}
+                                onClick={(e) => selectTab(e, "/creator/script-slate", "creator-script-slate")}
+                            />
+                            <Tab
+                                label="Color grading"
+                                component={Link}
+                                to={`/creator/color-grading`}
+                                value={`/creator/color-grading`}
+                                onClick={(e) => selectTab(e, "/creator/color-grading", "creator-color-grading")}
                             />
                         </Tabs>
                     </div>
