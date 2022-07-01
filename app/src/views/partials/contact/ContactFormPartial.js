@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-const PhotoFilmPartial = (props) => {
+
+const PhotoFilmPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
@@ -97,6 +98,7 @@ const PhotoFilmPartial = (props) => {
                                             variant="contained"
                                             size="large"
                                             type="submit"
+                                            // color="success"
                                         >
                                             Wyślij wiadomość
                                         </Button>
