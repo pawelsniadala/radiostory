@@ -28,7 +28,7 @@ const PhotoSection = () => {
                     </div>
                     <LinkMore
                         linkTo="/photo"
-                        linkText="Zobacz wszystkkie zdjęcia"
+                        linkText="Zobacz wszystkie zdjęcia"
                     />
                 </div>
             </div>
