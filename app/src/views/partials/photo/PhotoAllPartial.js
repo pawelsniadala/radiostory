@@ -22,7 +22,7 @@ const PhotoAllPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper photo">
-                        <Gallery>
+                        <Gallery withCaption>
                             {all.length ? all.map((item) => (
                                 <Item
                                     key={item.id}
@@ -31,6 +31,9 @@ const PhotoAllPartial = () => {
                                     width={item.original.width}
                                     height={item.original.height}
                                     title={item.title}
+                                    alt={item.title}
+                                    caption={item.title}
+                                    cropped
                                 >
                                     {({ ref, open }) => (
                                         <CardPhoto

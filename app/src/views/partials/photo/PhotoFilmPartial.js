@@ -19,7 +19,7 @@ const PhotoFilmPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery>
+                        <Gallery withCaption>
                             {film.length ? film.map((item) => (
                                 <Item
                                     key={item.id}
@@ -28,6 +28,9 @@ const PhotoFilmPartial = () => {
                                     width={item.original.width}
                                     height={item.original.height}
                                     title={item.title}
+                                    alt={item.title}
+                                    caption={item.title}
+                                    cropped
                                 >
                                     {({ ref, open }) => (
                                         <CardPhoto
