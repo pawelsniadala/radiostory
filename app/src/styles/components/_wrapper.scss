@@ -78,13 +78,13 @@ main {
 
 .card-wrapper {
     &.photo {
-        column-count: 3;
+        column-count: 4;
         column-gap: 0.5rem;
         orphans: 1;
         widows: 1;
 
         @media (max-width: 1199.98px) and (min-width: 992px) {
-            column-count: 2;
+            column-count: 3;
         }
 
         @media (max-width: 991.98px) {
