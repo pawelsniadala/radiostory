@@ -78,17 +78,28 @@ main {
 
 .card-wrapper {
     &.photo {
-        column-count: 4;
-        column-gap: 0.5rem;
-        orphans: 1;
-        widows: 1;
+        // column-count: 4;
+        // column-gap: 0.5rem;
+        // orphans: 1;
+        // widows: 1;
+
+        display: grid;
+        grid-gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        // grid-template-areas:
+        //     "vertical1 vertical1 square1 square2"
+        //     "vertical1 vertical1 vertical2 vertical2"
+        //     "square3 square4 vertical2 vertical2";
+        grid-template-columns: repeat(4,1fr);
 
         @media (max-width: 1199.98px) and (min-width: 992px) {
-            column-count: 3;
+            // column-count: 3;
+            grid-template-columns: repeat(3,1fr);
         }
 
         @media (max-width: 991.98px) {
-            column-count: 2;
+            // column-count: 2;
+            grid-template-columns: repeat(2,1fr);
         }
     }
 
