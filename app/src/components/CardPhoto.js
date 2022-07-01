@@ -20,6 +20,31 @@ const CardPhoto = ({
             <span onClick={onClick}>
                 <ZoomInIcon sx={{ fontSize: 60 }} />
             </span>
+            {/* <div class="MuiImageListItemBar-root MuiImageListItemBar-positionBottom css-ztrqiq-MuiImageListItemBar-root">
+                <div class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBottom MuiImageListItemBar-titleWrapActionPosRight css-14q7c0c-MuiImageListItemBar-titleWrap">
+                    <div class="MuiImageListItemBar-title css-dasnyc-MuiImageListItemBar-title">
+                        Breakfast
+                    </div>
+                    <div class="MuiImageListItemBar-subtitle css-hk6gwf-MuiImageListItemBar-subtitle">
+                        @bkristastucchio
+                    </div>
+                </div>
+            </div> */}
+            {cardTitle ? (
+                <div className="description-wrapper">
+                <div className="text-wrapper">
+                    <div className="title">
+                        {cardTitle}
+                    </div>
+                    {/* <div className="subtitle">
+                        @bkristastucchio
+                    </div> */}
+                </div>
+            </div>
+            ) : (
+                null
+            )}
+
         </div>
     </div>
 );
