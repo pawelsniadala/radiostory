@@ -160,6 +160,22 @@ footer {
         "square3 square4 vertical2 vertical2";
     grid-template-columns: repeat(4,1fr);
 
+    @media (max-width: 1199.98px) and (min-width: 992px) {
+        grid-template-areas:
+        "vertical1 square1"
+        "vertical1 vertical2"
+        "square3 vertical2";
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    @media (max-width: 991.98px) and (min-width: 1px) {
+        grid-template-areas:
+        "vertical1 square1"
+        "square3 vertical2";
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
     img {
         object-fit: cover;
         object-position: top;
@@ -170,130 +186,101 @@ footer {
     .a1 {
         grid-area: vertical1;
         height: 484px;
-
-        // border-left: 2px solid #c4b888;
-        // border-top: 2px solid #c4b888;
-        // border-right: 1px solid #c4b888;
-        // border-bottom: 1px solid #c4b888;
-
-        // border: 1px solid #c4b888;
-
-        // border-top-left-radius: 8px;
         border-radius: 8px;
 
         img {
-            // border-top-left-radius: calc(8px - 1px);
             border-radius: calc(8px - 1px);
+        }
+
+        @media (max-width: 992.98px) {
+            height: 312px;
+        }
+
+        @media (max-width: 539.98px) {
+            height: 234px;
         }
     }
 
     .a2 {
         grid-area: square1;
         height: 312px;
-
-        // border-left: 1px solid #c4b888;
-        // border-top: 2px solid #c4b888;
-        // border-right: 1px solid #c4b888;
-        // border-bottom: 1px solid #c4b888;
-
-        // border: 1px solid #c4b888;
-
         border-radius: 8px;
 
         img {
-            // border-top-left-radius: calc(8px - 1px);
             border-radius: calc(8px - 1px);
+        }
+
+        @media (max-width: 992.98px) {
+            height: 312px;
+        }
+
+        @media (max-width: 539.98px) {
+            height: 234px;
         }
     }
 
     .a3 {
         grid-area: square2;
         height: 312px;
-
-        // border-left: 1px solid #c4b888;
-        // border-top: 2px solid #c4b888;
-        // border-right: 2px solid #c4b888;
-        // border-bottom: 1px solid #c4b888;
-
-        // border: 1px solid #c4b888;
-
-        // border-top-right-radius: 8px;
-
-        // img {
-        //     border-top-right-radius: calc(8px - 1px);
-        // }
-
         border-radius: 8px;
 
         img {
-            // border-top-left-radius: calc(8px - 1px);
             border-radius: calc(8px - 1px);
         }
+
+        @media (max-width: 1199.98px) and (min-width: 1px) {
+            display: none;
+        }
+
     }
 
     .a4 {
         grid-area: square3;
         height: 312px;
-
-        // border-left: 2px solid #c4b888;
-        // border-top: 1px solid #c4b888;
-        // border-right: 1px solid #c4b888;
-        // border-bottom: 2px solid #c4b888;
-
-        // border: 1px solid #c4b888;
-
-        // border-bottom-left-radius: 8px;
-
-        // img {
-        //     border-bottom-left-radius: calc(8px - 1px);
-        // }
         border-radius: 8px;
 
         img {
-            // border-top-left-radius: calc(8px - 1px);
             border-radius: calc(8px - 1px);
+        }
+
+        @media (max-width: 992.98px) {
+            height: 312px;
+        }
+
+        @media (max-width: 539.98px) {
+            height: 234px;
         }
     }
 
     .a5 {
         grid-area: square4;
         height: 312px;
-
-        // border-left: 1px solid #c4b888;
-        // border-top: 1px solid #c4b888;
-        // border-right: 1px solid #c4b888;
-        // border-bottom: 2px solid #c4b888;
-
-        // border: 1px solid #c4b888;
         border-radius: 8px;
 
         img {
-            // border-top-left-radius: calc(8px - 1px);
             border-radius: calc(8px - 1px);
+        }
+
+        @media (max-width: 1199.98px) and (min-width: 1px) {
+            display: none;
         }
     }
 
     .a6 {
         grid-area: vertical2;
         height: 484px;
-
-        // border-left: 1px solid #c4b888;
-        // border-top: 1px solid #c4b888;
-        // border-right: 2px solid #c4b888;
-        // border-bottom: 2px solid #c4b888;
-
-        // border: 1px solid #c4b888;
-
-        // border-bottom-right-radius: 16px;
-
-        // img {
-        //     border-bottom-right-radius: calc(16px - 1px);
-        // }
         border-radius: 8px;
 
         img {
-            // border-top-left-radius: calc(8px - 1px);
             border-radius: calc(8px - 1px);
+        }
+
+        @media (max-width: 992.98px) {
+            height: 312px;
+        }
+
+        @media (max-width: 539.98px) {
+            height: 234px;
         }
     }
 }
