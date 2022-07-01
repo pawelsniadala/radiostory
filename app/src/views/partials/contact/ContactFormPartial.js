@@ -3,8 +3,8 @@ import { useEffect, useRef  } from "react";
 import emailjs from "@emailjs/browser";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-
-const PhotoFilmPartial = () => {
+import { styled } from '@mui/material/styles';
+const PhotoFilmPartial = (props) => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
@@ -28,6 +28,25 @@ const PhotoFilmPartial = () => {
         new bootstrap.Toast(document.getElementById("successToast")).show();
     }
 
+    const CssTextField = styled(TextField)({
+        '& label.Mui-focused': {
+            color: '#991111',
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: '#991111',
+        },
+        '& .MuiOutlinedInput-root': {
+            '&:hover fieldset': {
+                borderColor: '#991111',
+                borderWidth: '1px',
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: '#991111',
+                borderWidth: '1px',
+            },
+        },
+    });
+
     return (
         <div className="video-wedding-partial">
             <section className="realization-section">
@@ -36,7 +55,7 @@ const PhotoFilmPartial = () => {
                         <div className="card contact form">
                             <div className="card-body">
                                 <form ref={form} onSubmit={sendEmail}>
-                                    <TextField
+                                    <CssTextField
                                         helperText=" "
                                         id="demo-helper-text-aligned-no-helper"
                                         label="Imię i nazwisko"
@@ -45,7 +64,7 @@ const PhotoFilmPartial = () => {
                                         name="name"
                                         required
                                     />
-                                    <TextField
+                                    <CssTextField
                                         helperText=" "
                                         id="demo-helper-text-aligned-no-helper"
                                         label="Adres e-mail"
@@ -54,7 +73,7 @@ const PhotoFilmPartial = () => {
                                         name="email"
                                         required
                                     />
-                                    <TextField
+                                    <CssTextField
                                         helperText=" "
                                         id="demo-helper-text-aligned-no-helper"
                                         label="Numer telefonu"
@@ -63,7 +82,7 @@ const PhotoFilmPartial = () => {
                                         name="phone"
                                         required
                                     />
-                                    <TextField
+                                    <CssTextField
                                         id="outlined-multiline-static"
                                         label="Wiadomość"
                                         className="mb-4"
