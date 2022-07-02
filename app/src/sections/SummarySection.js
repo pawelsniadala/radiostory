@@ -7,7 +7,10 @@ const SummarySection = () => {
         <section className="studio-section">
             <div className="section-wrapper">
                 <div className="parallax-wrapper">
-                    <Parallax section="summary">
+                    <Parallax section="summary"
+                        role="img"
+                        ariaLabel="https://www.pexels.com/pl-pl/zdjecie/audio-dzwiek-glosnik-mikrofon-484"
+                    >
                         <div className="parallax-content">
                             <div className="heading">
                                 Radiosummary

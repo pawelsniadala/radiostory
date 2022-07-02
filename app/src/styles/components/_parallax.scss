@@ -25,7 +25,7 @@
 
                 .photo-banner-inner {
             &:after {
-                @include bd-bg-overlay(#000, .4);
+                @include bd-bg-overlay(#000, .5);
                 filter: brightness(50%);
             }
         }

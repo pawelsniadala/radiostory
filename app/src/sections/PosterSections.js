@@ -44,7 +44,21 @@ const PosterSection = () => {
                                 <span className="item">Aleksandra Kardynał</span>
                             </span>
                             <hr/>
-                            <span className="info">Film w produkcji</span>
+                            <span className="text">
+                                <span className="item heading">Film w produkcji</span>
+                            </span>
+                            <span className="text">
+                                <span className="item heading">Produkcja</span>
+                                <span className="item">Polska</span>
+                            </span>
+                            <span className="text">
+                                <span className="item heading">Rok produkcji</span>
+                                <span className="item">2022</span>
+                            </span>
+                            <span className="text">
+                                <span className="item">Barwny</span>
+                                <span className="item">104 min</span>
+                            </span>
                         </div>
                     </div>
                 </div>
