@@ -45,6 +45,14 @@ body.modal-open {
     }
 }
 
+body[style="overflow: hidden;"] {
+    .scrollup {
+        button.MuiButton-root {
+            display: none;
+        }
+    }
+}
+
 .send {
     button.MuiButton-root {
         background-color: #c4b888;
