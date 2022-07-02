@@ -22,12 +22,18 @@
 .jumbotron {
     .photo-wrapper {
         position: relative;
-        background: url("../../assets/poster/poster.jpg") 65% 0 no-repeat;
+        background: url("../../assets/poster/poster.jpg") 50% 40% no-repeat;
         background-size: cover;
+
+        @media (max-width: 539.98px) {
+            position: relative;
+            background: url("../../assets/poster/poster3.jpg") 50% 0 no-repeat;
+            background-size: cover;
+        }
 
         &::after {
             // @include bd-bg-overlay(rgb(255, 255, 255), .6);
-            @include bd-bg-overlay(rgb(0, 0, 0), .1);
+            @include bd-bg-overlay(rgb(0, 0, 0), .15);
         }
 
         .content-wrapper {
@@ -93,7 +99,7 @@
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
                     // color: #fff;
-                    color: rgba(255,255,255,.65);
+                    color: rgba(255,255,255,.75);
 
                     @media (max-width: 767.98px) {
                         font-size: 0.55rem;
@@ -103,7 +109,7 @@
                     .text {
                         .heading {
                             font-weight: 600;
-                            color: rgba(255,255,255,.75);
+                            color: rgba(255,255,255,.85);
                         }
 
                         .item {
