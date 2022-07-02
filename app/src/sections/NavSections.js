@@ -132,7 +132,7 @@ const NavSection = () => {
                         <ListItemIcon>
                             <FacebookSvg />
                         </ListItemIcon>
-                        <a key="" href="/"
+                        <a key="" href="https://www.facebook.com/Radiostory-104327058985831/"
                             className="facebook"
                             // title="facebook"
                             target="_blank"
@@ -147,7 +147,7 @@ const NavSection = () => {
                         <ListItemIcon>
                             <YouTubeSvg />
                         </ListItemIcon>
-                        <a key="" href="/"
+                        <a key="" href="https://www.youtube.com/"
                             className="youtubbe"
                             // title="facebook"
                             target="_blank"
@@ -162,8 +162,8 @@ const NavSection = () => {
                         <ListItemIcon>
                             <SpotifySvg />
                         </ListItemIcon>
-                        <a key="" href="/"
-                            className="youtubbe"
+                        <a key="" href="https://open.spotify.com/"
+                            className="spotify"
                             // title="facebook"
                             target="_blank"
                             rel="noreferrer"
