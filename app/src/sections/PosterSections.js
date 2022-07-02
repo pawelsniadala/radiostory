@@ -7,7 +7,7 @@ const PosterSection = () => {
                         <h1 className="display-1 company-name">Radiostory</h1>
                         <div className="description container">
                             <span className="text">
-                                <span className="item heading">Scenariusz i reżyseria:</span>
+                                <span className="item heading">Scenariusz i reżyseria</span>
                                 <span className="item">Maciej Hydr</span>
                             </span>
                             <span className="text">

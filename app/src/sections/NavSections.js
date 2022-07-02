@@ -30,15 +30,15 @@ const NavSection = () => {
         bottom: false,
         right: false,
     });
-        
+
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
         return;
         }
-    
+
         setState({ ...state, [anchor]: open });
     };
-    
+
     const list = (anchor) => (
         <Box
             sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
@@ -238,7 +238,7 @@ const NavSection = () => {
                         </button>
                     </div>
                     <div className="offcanvas-body navbar-light" id="navbarSupportedContent">
-                        <ul className="navbar-nav justify-content-end flex-grow-1">
+                        <ul className="navbar-nav justify-content-start flex-grow-1">
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
@@ -269,16 +269,6 @@ const NavSection = () => {
                                     Zdjęcia
                                 </NavLink>
                             </li>
-                            {/* <li className="nav-item">
-                                <NavLink
-                                    className="nav-link"
-                                    activeclassname="active"
-                                    aria-current="page"
-                                    to="/music"
-                                >
-                                    Muzyka
-                                </NavLink>
-                            </li> */}
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
@@ -288,6 +278,38 @@ const NavSection = () => {
                                 >
                                     Kontakt
                                 </NavLink>
+                            </li>
+                        </ul>
+                        <ul className="navbar-nav justify-content-end flex-grow-1">
+                            <li className="nav-item">
+                                <a key="" href="https://www.facebook.com/Radiostory-104327058985831/"
+                                    className="nav-link"
+                                    title="Facebook"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <FacebookSvg />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a key="" href="https://www.youtube.com/"
+                                    className="nav-link"
+                                    title="YouTube"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <YouTubeSvg />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a key="" href="https://open.spotify.com/"
+                                    className="nav-link"
+                                    title="Spotify"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <SpotifySvg />
+                                </a>
                             </li>
                         </ul>
                     </div>
