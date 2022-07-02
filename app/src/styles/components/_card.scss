@@ -4,7 +4,8 @@
         background-color: transparent;
         // margin-bottom: 0.5rem;
         // border-radius: 0;
-        border-radius: 8px;
+        // border-radius: 8px;
+        border-radius: 0;
         border: none;
         cursor: pointer;
 
@@ -14,8 +15,8 @@
 
             .card-img-top {
                 transition: filter .3s;
-                // border-radius: 0;
-                border-radius: calc(8px - 1px);
+                border-radius: 0;
+                // border-radius: calc(8px - 1px);
                 // border-top-left-radius: calc(16px - 1px);
                 // border-top-right-radius: calc(16px - 1px);
                 object-fit: cover;
@@ -59,7 +60,8 @@
                 -ms-flex-align: center;
                 align-items: center;
                 bottom: 0;
-                border-radius: 0 0 8px 8px;
+                // border-radius: 0 0 8px 8px;
+                border-radius: 0;
 
                 .text-wrapper {
                     -webkit-box-flex: 1;
