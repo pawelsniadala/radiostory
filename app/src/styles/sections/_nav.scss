@@ -44,6 +44,23 @@ nav.navbar {
         }
 
         .offcanvas {
+            .offcanvas-body {
+                .navbar-nav {
+                    align-items: center;
+
+                    .nav-link {
+                        svg {
+                            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+                            opacity: .55;
+
+                            &:hover {
+                                opacity: .75;
+                            }
+                        }
+                    }
+                }
+            }
+
             &.show {
                 .offcanvas-body {
                     .nav-link {
