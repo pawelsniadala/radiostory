@@ -86,19 +86,10 @@
                 }
 
                 .description {
-                    // display: flex;
-                    // flex-wrap: wrap;
-                    // gap: 1.25rem;
-                    // opacity: 0;
-                    // animation: fadeIn .3s;
-                    // animation-delay: .3s;
-                    // animation-fill-mode: forwards;
-                    // font-size: 0.95rem;
-                    font-size: calc(0.4rem + 0.45vw);
+                    font-size: 0.95rem;
                     font-weight: 300;
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
-                    // color: #fff;
                     color: rgba(255,255,255,.75);
 
                     @media (max-width: 767.98px) {

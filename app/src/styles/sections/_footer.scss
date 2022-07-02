@@ -152,7 +152,8 @@ footer {
 // do przeniesienia
 .grid-wrapper {
     display: grid;
-    grid-gap: 0.5rem;
+    // grid-gap: 0.5rem;
+    grid-gap: 4px;
     margin-bottom: 1.5rem;
     grid-template-areas:
         "vertical1 vertical1 square1 square2"
@@ -175,7 +176,6 @@ footer {
         grid-template-columns: repeat(2,1fr);
     }
 
-
     img {
         object-fit: cover;
         object-position: top;
@@ -186,10 +186,10 @@ footer {
     .a1 {
         grid-area: vertical1;
         height: 484px;
-        border-radius: 8px;
+        // border-radius: 8px;
 
         img {
-            border-radius: calc(8px - 1px);
+            // border-radius: calc(8px - 1px);
         }
 
         @media (max-width: 992.98px) {
@@ -208,10 +208,10 @@ footer {
     .a2 {
         grid-area: square1;
         height: 312px;
-        border-radius: 8px;
+        // border-radius: 8px;
 
         img {
-            border-radius: calc(8px - 1px);
+            // border-radius: calc(8px - 1px);
         }
 
         @media (max-width: 992.98px) {
@@ -230,10 +230,10 @@ footer {
     .a3 {
         grid-area: square2;
         height: 312px;
-        border-radius: 8px;
+        // border-radius: 8px;
 
         img {
-            border-radius: calc(8px - 1px);
+            // border-radius: calc(8px - 1px);
         }
 
         @media (max-width: 1199.98px) and (min-width: 1px) {
@@ -245,10 +245,10 @@ footer {
     .a4 {
         grid-area: square3;
         height: 312px;
-        border-radius: 8px;
+        // border-radius: 8px;
 
         img {
-            border-radius: calc(8px - 1px);
+            // border-radius: calc(8px - 1px);
         }
 
         @media (max-width: 992.98px) {
@@ -267,10 +267,10 @@ footer {
     .a5 {
         grid-area: square4;
         height: 312px;
-        border-radius: 8px;
+        // border-radius: 8px;
 
         img {
-            border-radius: calc(8px - 1px);
+            // border-radius: calc(8px - 1px);
         }
 
         @media (max-width: 1199.98px) and (min-width: 1px) {
@@ -281,10 +281,10 @@ footer {
     .a6 {
         grid-area: vertical2;
         height: 484px;
-        border-radius: 8px;
+        // border-radius: 8px;
 
         img {
-            border-radius: calc(8px - 1px);
+            // border-radius: calc(8px - 1px);
         }
 
         @media (max-width: 992.98px) {
