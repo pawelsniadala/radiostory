@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/radiostory/static/css/main.9d4addc8.css",
+    "main.css": "/radiostory/static/css/main.86c85a4a.css",
     "main.js": "/radiostory/static/js/main.23484d0a.js",
     "static/js/787.c1112931.chunk.js": "/radiostory/static/js/787.c1112931.chunk.js",
     "static/media/photoPlanOriginal2.jpg": "/radiostory/static/media/photoPlanOriginal2.3c683793b1a4e8582cac.jpg",
     "static/media/photoFilmOriginal2.jpg": "/radiostory/static/media/photoFilmOriginal2.d6584e840031c2287ee8.jpg",
+    "static/media/poster3.jpg": "/radiostory/static/media/poster3.d6584e840031c2287ee8.jpg",
     "static/media/photoPlanOriginal1.jpg": "/radiostory/static/media/photoPlanOriginal1.4e5dfba8e859f5a3997a.jpg",
     "static/media/photoPlanOriginal4.jpg": "/radiostory/static/media/photoPlanOriginal4.e882870e908495b81282.jpg",
     "static/media/photoFilmOriginal4.jpg": "/radiostory/static/media/photoFilmOriginal4.b2d5c07ce3d05c4c0b7f.jpg",
+    "static/media/poster.jpg": "/radiostory/static/media/poster.b2d5c07ce3d05c4c0b7f.jpg",
     "static/media/photoPlanOriginal3.jpg": "/radiostory/static/media/photoPlanOriginal3.9bcee07a55b2a0cea17c.jpg",
     "static/media/photoFilmOriginal3.jpg": "/radiostory/static/media/photoFilmOriginal3.798f3a65a37e59a853d2.jpg",
-    "static/media/poster.jpg": "/radiostory/static/media/poster.798f3a65a37e59a853d2.jpg",
     "static/media/photoPlanThumbnail2.jpg": "/radiostory/static/media/photoPlanThumbnail2.1a122aca867bb5ba213b.jpg",
     "static/media/photoFilmOriginal1.jpg": "/radiostory/static/media/photoFilmOriginal1.442ea988732c4964eb7d.jpg",
     "static/media/creatorThumbnail1.jpg": "/radiostory/static/media/creatorThumbnail1.27dfe849bf1304c15e80.jpg",
@@ -41,12 +42,12 @@
     "static/media/photoPlanOriginal6.jpg": "/radiostory/static/media/photoPlanOriginal6.49b555505229086649c3.jpg",
     "static/media/creatorColorGradingThumbnail1.jpg": "/radiostory/static/media/creatorColorGradingThumbnail1.9ca829735e14144d9f92.jpg",
     "index.html": "/radiostory/index.html",
-    "main.9d4addc8.css.map": "/radiostory/static/css/main.9d4addc8.css.map",
+    "main.86c85a4a.css.map": "/radiostory/static/css/main.86c85a4a.css.map",
     "main.23484d0a.js.map": "/radiostory/static/js/main.23484d0a.js.map",
     "787.c1112931.chunk.js.map": "/radiostory/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d4addc8.css",
+    "static/css/main.86c85a4a.css",
     "static/js/main.23484d0a.js"
   ]
 }
