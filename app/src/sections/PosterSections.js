@@ -11,7 +11,7 @@ const PosterSection = () => {
                                 <span className="item">Maciej Hydr</span>
                             </span>
                             <span className="text">
-                                <span className="item heading">Obsada:</span>
+                                <span className="item heading">Obsada</span>
                                 <span className="item">Piotr Głowacki</span>
                                 <span className="item">Grzegorz Gzyl</span>
                                 <span className="item">Bogdan Kalus</span>
@@ -22,21 +22,21 @@ const PosterSection = () => {
                                 <span className="item">Piotr Witkowski</span>
                             </span>
                             <span className="text">
-                                <span className="item heading">Zdjęcia:</span>
+                                <span className="item heading">Zdjęcia</span>
                                 <span className="item">Aleksander Krzystyniak</span>
                                 <span className="item">Michał Środek</span>
                             </span>
                             <span className="text">
-                                <span className="item heading">Montaż:</span>
+                                <span className="item heading">Montaż</span>
                                 <span className="item">Jakub Kopeć PSM</span>
                             </span>
                             <span className="text">
-                                <span className="item heading">Charakteryzacja:</span>
+                                <span className="item heading">Charakteryzacja</span>
                                 <span className="item">Dominika Hamziuk</span>
                                 <span className="item">Katarzyna Gulbierz</span>
                             </span>
                             <span className="text">
-                                <span className="item heading">Kierownictwo planu:</span>
+                                <span className="item heading">Kierownictwo planu</span>
                                 <span className="item">Maciej Hydr</span>
                                 <span className="item">Tomasz Kazimierczak</span>
                                 <span className="item">Mateusz Rzońca</span>
@@ -44,7 +44,7 @@ const PosterSection = () => {
                                 <span className="item">Aleksandra Kardynał</span>
                             </span>
                             <hr/>
-                            <span className="info">Wkrótce w kinach</span>
+                            <span className="info">Film w produkcji</span>
                         </div>
                     </div>
                 </div>
