@@ -152,8 +152,8 @@ footer {
 // do przeniesienia
 .grid-wrapper {
     display: grid;
-    // grid-gap: 0.5rem;
-    grid-gap: 4px;
+    grid-gap: 0.5rem;
+    // grid-gap: 4px;
     margin-bottom: 1.5rem;
     grid-template-areas:
         "vertical1 vertical1 square1 square2"
