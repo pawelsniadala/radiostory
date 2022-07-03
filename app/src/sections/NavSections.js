@@ -1,39 +1,30 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-
 import HomeSvg from "../assets/navbar/HomeSvg";
 import CastSvg from "../assets/navbar/CastSvg";
 import CreatorSvg from "../assets/navbar/CreatorSvg";
 import PhotoSvg from "../assets/navbar/PhotoSvg";
 import ContactSvg from "../assets/navbar/ContactSvg";
-
 import FacebookSvg from "../assets/navbar/FacebookSvg";
 import YouTubeSvg from "../assets/navbar/YouTubeSvg";
 import SpotifySvg from "../assets/navbar/SpotifySvg";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
 
 const NavSection = () => {
-    const [state, setState] = useState({
-        top: false,
-        left: false,
-        bottom: false,
-        right: false,
+    const [ state, setState ] = useState({
+        left: false
     });
 
     const toggleDrawer = (anchor, open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-        return;
+        if (event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
+            return;
         }
 
         setState({ ...state, [anchor]: open });
@@ -41,136 +32,136 @@ const NavSection = () => {
 
     const list = (anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+            sx={{ width: 250 }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List className="home">
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <HomeSvg />
-                        </ListItemIcon>
-                        <NavLink
-                            className="nav-link"
-                            activeclassname="active"
-                            aria-current="page"
-                            to="/"
-                        >
-                            Home
-                        </NavLink>
-                    </ListItemButton>
+                    <NavLink
+                        className="nav-link"
+                        activeclassname="active"
+                        aria-current="page"
+                        to="/"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <HomeSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Obsada" />
+                        </ListItemButton>
+                    </NavLink>
                 </ListItem>
             </List>
             <List className="menu">
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <CastSvg />
-                        </ListItemIcon>
-                        <NavLink
-                            className="nav-link"
-                            activeclassname="active"
-                            aria-current="page"
-                            to="/cast"
-                        >
-                            Obsada
-                        </NavLink>
-                    </ListItemButton>
+                    <NavLink
+                        className="nav-link"
+                        activeclassname="active"
+                        aria-current="page"
+                        to="/cast"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <CastSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Obsada" />
+                        </ListItemButton>
+                    </NavLink>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <CreatorSvg />
-                        </ListItemIcon>
-                        <NavLink
-                            className="nav-link"
-                            activeclassname="active"
-                            aria-current="page"
-                            to="/creator"
-                        >
-                            Twórcy
-                        </NavLink>
-                    </ListItemButton>
+                    <NavLink
+                        className="nav-link"
+                        activeclassname="active"
+                        aria-current="page"
+                        to="/creator"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <CreatorSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Twórcy" />
+                        </ListItemButton>
+                    </NavLink>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <PhotoSvg />
-                        </ListItemIcon>
-                        <NavLink
-                            className="nav-link"
-                            activeclassname="active"
-                            aria-current="page"
-                            to="/photo"
-                        >
-                            Zdjęcia
-                        </NavLink>
-                    </ListItemButton>
+                    <NavLink
+                        className="nav-link"
+                        activeclassname="active"
+                        aria-current="page"
+                        to="/photo"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <PhotoSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Zdjęcia" />
+                        </ListItemButton>
+                    </NavLink>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <ContactSvg />
-                        </ListItemIcon>
-                        <NavLink
-                            className="nav-link"
-                            activeclassname="active"
-                            aria-current="page"
-                            to="/contact"
-                        >
-                            Kontakt
-                        </NavLink>
-                    </ListItemButton>
+                    <NavLink
+                        className="nav-link"
+                        activeclassname="active"
+                        aria-current="page"
+                        to="/contact"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ContactSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Kontakt" />
+                        </ListItemButton>
+                    </NavLink>
                 </ListItem>
             </List>
             <Divider />
             <List className="media">
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <FacebookSvg />
-                        </ListItemIcon>
-                        <a key="" href="https://www.facebook.com/Radiostory-104327058985831/"
-                            className="facebook"
-                            // title="facebook"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Facebook
-                        </a>
-                    </ListItemButton>
+                    <a href="https://www.facebook.com/Radiostory-104327058985831/"
+                        className="facebook"
+                        title="Facebook"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <FacebookSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Facebook" />
+                        </ListItemButton>
+                    </a>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <YouTubeSvg />
-                        </ListItemIcon>
-                        <a key="" href="https://www.youtube.com/"
-                            className="youtubbe"
-                            // title="facebook"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            YouTube
-                        </a>
-                    </ListItemButton>
+                    <a href="https://www.youtube.com/"
+                        className="youtube"
+                        title="Youtube"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <YouTubeSvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Youtube" />
+                        </ListItemButton>
+                    </a>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <SpotifySvg />
-                        </ListItemIcon>
-                        <a key="" href="https://open.spotify.com/"
-                            className="spotify"
-                            // title="facebook"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Spotify
-                        </a>
-                    </ListItemButton>
+                    <a href="https://open.spotify.com/"
+                        className="spotify"
+                        title="Spotify"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <SpotifySvg />
+                            </ListItemIcon>
+                            <ListItemText primary="Spotify" />
+                        </ListItemButton>
+                    </a>
                 </ListItem>
             </List>
         </Box>
@@ -179,23 +170,8 @@ const NavSection = () => {
     return (
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
             <div className="container container-fluid">
-                {/* <NavLink
-                    className="navbar-brand text-uppercase"
-                    activeclassname="active"
-                    to="/"
-                >
-                    Radiostory
-                </NavLink> */}
-                {/* <button className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button> */}
                 <div>
-                    {['left'].map((anchor) => (
+                    {["left"].map((anchor) => (
                         <div key={anchor}>
                             <button className="navbar-toggler"
                                 onClick={toggleDrawer(anchor, true)}
