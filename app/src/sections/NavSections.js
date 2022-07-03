@@ -49,7 +49,7 @@ const NavSection = () => {
                             <ListItemIcon>
                                 <HomeSvg />
                             </ListItemIcon>
-                            <ListItemText primary="Obsada" />
+                            <ListItemText primary="Home" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
