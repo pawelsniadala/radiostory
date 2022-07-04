@@ -56,7 +56,7 @@ body[style="overflow: hidden;"] {
 .send {
     button.MuiButton-root {
         background-color: darken(#c4b888, 20%);
-        border: 2px solid #9a8a4c;
+        border: 1px solid #9a8a4c;
         // border-radius: 980px;
     }
 }
@@ -65,8 +65,11 @@ body[style="overflow: hidden;"] {
     button.MuiButton-root {
         background-color: rgba(255, 255, 255, 0.95);
         color: #212529;
-        border: 2px solid rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.95);
         border-radius: 980px;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 1rem;
     }
 }
 
@@ -74,7 +77,10 @@ body[style="overflow: hidden;"] {
     a.MuiButton-root {
         background-color: transparent;
         color: rgba(255, 255, 255, 0.95);
-        border: 2px solid rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.95);
         border-radius: 980px;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 1rem;
     }
 }

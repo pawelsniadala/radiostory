@@ -14,16 +14,18 @@
             user-select: none;
 
             .card-img-top {
-                transition: filter .3s;
+                // transition: filter .3s;
                 border-radius: 0;
                 // border-radius: calc(8px - 1px);
                 // border-top-left-radius: calc(16px - 1px);
                 // border-top-right-radius: calc(16px - 1px);
                 object-fit: cover;
-                object-position: top;
+                // object-position: top;
                 // width: 100%;
                 // height: 100%;
                 height: 312px;
+
+
 
                 @media (max-width: 767.98px) and (min-width: 540px) {
                     height: 254px;
@@ -34,23 +36,35 @@
                 }
             }
 
-            svg {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) scale(0);
-                transition: transform .3s, -webkit-transform .3s;
-                cursor: pointer;
-                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-                opacity: .7;
-            }
-
-            .description-wrapper {
-                animation: 1000ms ease-in-out 0s 1 normal none running fadeIn;
+            .icon-wrapper {
                 position: absolute;
                 left: 0;
                 right: 0;
-                background: rgba(0, 0, 0, 0.3);
+                top: 0;
+                bottom: 0;
+                z-index: 3;
+
+                svg {
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0);
+                    transition: transform .3s, -webkit-transform .3s;
+                    cursor: pointer;
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+                    opacity: .7;
+                    z-index: 3;
+                }
+            }
+
+            .description-wrapper {
+                animation: 1500ms ease-in-out 0s 1 normal none running fadeIn;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                // background: rgba(0, 0, 0, 0.3);
+                background: linear-gradient(to bottom,rgba(255,255,255,0) 80%,#000 110%);
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -58,10 +72,12 @@
                 -webkit-align-items: center;
                 -webkit-box-align: center;
                 -ms-flex-align: center;
-                align-items: center;
+                // align-items: center;
+                align-items: end;
                 bottom: 0;
                 // border-radius: 0 0 8px 8px;
                 border-radius: 0;
+                z-index: 2;
 
                 .text-wrapper {
                     -webkit-box-flex: 1;
